@@ -22,7 +22,7 @@ npm run docs:preview
 | `docs/.vitepress/` | VitePress 配置文件（包括侧边栏导航） |
 | `docs/public/images/` | **所有静态图片资源必须存放在此处** |
 | `docs/guide/` | 使用说明、学习路线、考前冲刺 |
-| `docs/knowledge/` | 按技能栈打平的理论与知识页（如 `01-data-infrastructure/`, `05-ai-ml/` 等） |
-| `docs/interviews/` | 匹配技能栈对应拆分的面试题库（如 `01-data-analytics/`, `02-ai-agent/`） |
+| `docs/knowledge/` | 遵循严格 **6大支柱** 的理论与知识页（如 `01-data-infrastructure/`） |
+| `docs/interviews/` | 遵循严格 **4大岗位** 的面试题库（如 `01-data-analytics/`） |
 | `.cursor/rules/` | Cursor AI 编辑、排版与 Git 提交规范（确保内容高内聚、低耦合） |
 | `.cursor/skills/` | AI Agent 技能配置（用于自动化处理外部学习资料和零散面经） |
