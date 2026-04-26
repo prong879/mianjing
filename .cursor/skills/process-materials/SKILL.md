@@ -17,7 +17,7 @@ Use this skill when the user asks you to read, organize, or incorporate existing
 
 2. **Categorize the Content:**
    - Determine if the content is **Knowledge** (concepts, tutorials, architectures) or **Interviews** (Q&A, specific real-world interview transcripts).
-   - Determine the correct sub-directory in `docs/knowledge/` or `docs/interviews/` (e.g., `data-sql`, `ai-agent`, `quant-research`).
+   - Determine the correct sub-directory under `docs/knowledge/` (e.g., `01-data-infrastructure/sql`, `05-ai-ml/ai-agent`) or `docs/interviews/` (e.g., `01-data-analytics/sql`, `02-ai-agent`). Do not use legacy flat directory structures.
 
 3. **Draft the Markdown Pages:**
    - Write the content directly into `docs/` using the rules defined in `.cursor/rules/content-standards.mdc`.

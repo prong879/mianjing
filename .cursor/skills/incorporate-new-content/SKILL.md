@@ -24,9 +24,9 @@ Use this skill when the user sends you new information, images, screenshots, or 
    - In the Markdown file, reference it strictly as `![alt text](/images/filename.png)`.
 
 3. **Integrate the Content:**
-   - Search the codebase using the `Glob` or `Grep` tools to see if a relevant file already exists (e.g., `docs/interviews/data-analytics/sql-exercises.md`).
+   - Search the codebase using the `Glob` or `Grep` tools to see if a relevant file already exists (e.g., `docs/interviews/01-data-analytics/sql/sql-exercises.md`).
    - If a matching file exists, append or merge the new content into the relevant section. Ensure consistent heading levels. **Also append tags/metadata (like `> 标签：字节跳动，一面`) under the specific question.**
-   - If it's a completely new topic, create a new Markdown file adhering to `.cursor/rules/content-standards.mdc` (including YAML Frontmatter **with `tags`**).
+   - If it's a completely new topic, create a new Markdown file adhering to `.cursor/rules/content-standards.mdc` (including YAML Frontmatter **with `tags`**). Ensure it is placed in the correct numbered ability-pillar directory (e.g. `docs/knowledge/05-ai-ml/`).
 
 4. **Update the Sidebar (If Applicable):**
    - If a *new* file was created, update `docs/.vitepress/config.ts` so the user can navigate to it.
