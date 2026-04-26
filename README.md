@@ -26,3 +26,6 @@ npm run docs:preview
 | `docs/interviews/` | 遵循严格 **4大岗位** 的面试题库（如 `01-data-analytics/`） |
 | `.cursor/rules/` | Cursor AI 编辑、排版与 Git 提交规范（确保内容高内聚、低耦合） |
 | `.cursor/skills/` | AI Agent 技能配置（用于自动化处理外部学习资料和零散面经） |
+
+
+todo：把md注释式的标签，换为徽标 https://vitepress.dev/zh/reference/default-theme-badge
