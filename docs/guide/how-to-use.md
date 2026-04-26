@@ -13,8 +13,8 @@
 ## 导航建议
 
 - **数据分析 / 商业分析 / 数据科学**：先过 [知识库总览](/knowledge/) 里 SQL、统计、业务指标模块，再进 [面试题库](/interviews/) 按科目刷习题页。
-- **AI Agent**：先读 [Agent 架构](/knowledge/05-ai-ml/ai-agent/agent-architecture) 与 [RAG](/knowledge/05-ai-ml/ai-agent/rag)，再打开 [面试题合集](/interviews/02-ai-agent/questions) 按章节背诵。
-- **量化**：先看 [岗位与工具速览](/knowledge/06-quant-finance/quant-basics/internship-context)，再按 [因子 / 回测](/knowledge/06-quant-finance/quant-strategy/factors-and-strategy) 学习，面试前刷 [简历面](/interviews/03-quant-finance/resume-and-hr) 与 [知识面](/interviews/03-quant-finance/knowledge-questions)。
+- **AI Agent**：先读 [Agent 架构](/knowledge/05-ai-ml/ai-agent/agent-architecture) 与 [RAG](/knowledge/05-ai-ml/ai-agent/rag)，再打开 [面试题合集](/interviews/02-ai-agent/prompt-engineering) 按章节背诵。
+- **量化**：先看 [岗位与工具速览](/knowledge/06-quant-finance/quant-basics/internship-context)，再按 [因子 / 回测](/knowledge/06-quant-finance/quant-strategy/factors-and-strategy) 学习，面试前刷 [简历面](/interviews/03-quant-finance/derivatives) 与 [知识面](/interviews/03-quant-finance/math-stats)。
 
 ## GitHub Pages 的 `base` 路径
 

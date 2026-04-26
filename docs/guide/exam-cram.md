@@ -13,11 +13,11 @@
 **AI Agent**
 
 - [Agent 架构](/knowledge/05-ai-ml/ai-agent/agent-architecture) + [RAG](/knowledge/05-ai-ml/ai-agent/rag) 各读「常见考点 / 追问」
-- [面试题合集](/interviews/02-ai-agent/questions) 中挑一组「模板类」小节浏览（如回答模板章节）
+- [面试题合集](/interviews/02-ai-agent/prompt-engineering) 中挑一组「模板类」小节浏览（如回答模板章节）
 
 **量化**
 
-- [简历面](/interviews/03-quant-finance/resume-and-hr) 中的「冲刺清单 / 模板」
+- [简历面](/interviews/03-quant-finance/derivatives) 中的「冲刺清单 / 模板」
 - [编程与数据处理](/knowledge/06-quant-finance/quant-strategy/programming-and-data) 里 Backtrader / vn.py 流程口述
 
 ---
@@ -28,7 +28,7 @@
 |----|--------|-------|------|
 | 1 | SQL 知识 + [SQL 习题](/interviews/01-data-analytics/sql/sql-exercises) 前半 | [工程基础](/knowledge/05-ai-ml/ai-agent/engineering-basics) + [LLM](/knowledge/05-ai-ml/ai-agent/llm-basics) | [金融衍生品](/knowledge/06-quant-finance/quant-basics/finance-and-derivatives) |
 | 2 | [统计](/knowledge/03-statistics-experiment/statistics/probability-basics) + [统计习题](/interviews/01-data-analytics/python-statistics/statistics-exercises)；[A/B](/knowledge/03-statistics-experiment/ab-testing/ab-testing) + [习题](/interviews/01-data-analytics/business-warehouse/ab-exercises) | [Tool](/knowledge/05-ai-ml/ai-agent/tool-calling) + [RAG](/knowledge/05-ai-ml/ai-agent/rag) + 题集前半 | [因子与策略](/knowledge/06-quant-finance/quant-strategy/factors-and-strategy) + [回测](/knowledge/06-quant-finance/quant-strategy/backtest-and-live) |
-| 3 | [业务指标](/knowledge/04-business-product/business-analysis/metrics-and-methods) + [案例习题](/interviews/01-data-analytics/machine-learning/case-exercises)；[增长习题](/interviews/01-data-analytics/business-warehouse/growth-exercises) 选做 | [评测](/knowledge/05-ai-ml/ai-agent/evaluation-observability) + [安全](/knowledge/05-ai-ml/ai-agent/security) + 题集后半 | [数学统计](/knowledge/06-quant-finance/quant-basics/math-and-statistics) + [知识面](/interviews/03-quant-finance/knowledge-questions) |
+| 3 | [业务指标](/knowledge/04-business-product/business-analysis/metrics-and-methods) + [案例习题](/interviews/01-data-analytics/machine-learning/case-exercises)；[增长习题](/interviews/01-data-analytics/business-warehouse/growth-exercises) 选做 | [评测](/knowledge/05-ai-ml/ai-agent/evaluation-observability) + [安全](/knowledge/05-ai-ml/ai-agent/security) + 题集后半 | [数学统计](/knowledge/06-quant-finance/quant-basics/math-and-statistics) + [知识面](/interviews/03-quant-finance/math-stats) |
 
 ---
 
@@ -45,5 +45,5 @@
 ## 高频清单速链
 
 - 数据：[SQL 习题](/interviews/01-data-analytics/sql/sql-exercises) · [A/B 习题](/interviews/01-data-analytics/business-warehouse/ab-exercises) · [案例综合](/interviews/01-data-analytics/machine-learning/case-exercises)
-- Agent：[面试题合集](/interviews/02-ai-agent/questions)
-- 量化：[简历面](/interviews/03-quant-finance/resume-and-hr) · [知识面](/interviews/03-quant-finance/knowledge-questions)
+- Agent：[面试题合集](/interviews/02-ai-agent/prompt-engineering)
+- 量化：[简历面](/interviews/03-quant-finance/derivatives) · [知识面](/interviews/03-quant-finance/math-stats)

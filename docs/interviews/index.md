@@ -21,19 +21,19 @@
 
 ## AI Agent
 
-- [高频速览](/interviews/02-ai-agent/highlights)
-- [面试题与面经合集](/interviews/02-ai-agent/questions)（单页聚合，便于检索与打印）
+- [高频速览](/interviews/02-ai-agent/rag-system)
+- [面试题与面经合集](/interviews/02-ai-agent/prompt-engineering)（单页聚合，便于检索与打印）
 
 ## 量化
 
-- [高频速览](/interviews/03-quant-finance/highlights)
-- [简历面](/interviews/03-quant-finance/resume-and-hr)
-- [知识面](/interviews/03-quant-finance/knowledge-questions)
+- [高频速览](/interviews/03-quant-finance/coding-algorithms)
+- [简历面](/interviews/03-quant-finance/derivatives)
+- [知识面](/interviews/03-quant-finance/math-stats)
 
 ## 产品经理
 
-- [问题清单](/interviews/04-product-manager/jd-and-qa)
-- [术语清单](/interviews/04-product-manager/glossary)
+- [问题清单](/interviews/04-product-manager/product-sense)
+- [术语清单](/interviews/04-product-manager/strategy-design)
 
 ---
 

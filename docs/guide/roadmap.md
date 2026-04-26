@@ -22,7 +22,7 @@
 4. [Agent 架构](/knowledge/05-ai-ml/ai-agent/agent-architecture) → [框架生态](/knowledge/05-ai-ml/ai-agent/frameworks)
 5. [评测与可观测](/knowledge/05-ai-ml/ai-agent/evaluation-observability)、[安全](/knowledge/05-ai-ml/ai-agent/security)、[部署与成本](/knowledge/05-ai-ml/ai-agent/deployment-cost)
 
-然后通读 [AI Agent 面试题合集](/interviews/02-ai-agent/questions)。
+然后通读 [AI Agent 面试题合集](/interviews/02-ai-agent/prompt-engineering)。
 
 ## 3. 量化研究（中低频 CTA / 因子向）
 
@@ -32,7 +32,7 @@
 4. [因子与策略评价](/knowledge/06-quant-finance/quant-strategy/factors-and-strategy) → [回测与实盘框架](/knowledge/06-quant-finance/quant-strategy/backtest-and-live)
 5. [数学与统计](/knowledge/06-quant-finance/quant-basics/math-and-statistics)
 
-面试题：[简历面](/interviews/03-quant-finance/resume-and-hr)、[知识面](/interviews/03-quant-finance/knowledge-questions)。
+面试题：[简历面](/interviews/03-quant-finance/derivatives)、[知识面](/interviews/03-quant-finance/math-stats)。
 
 ## 4. 扩展资源（仓库内）
 

@@ -237,11 +237,12 @@ export default defineConfig({
           collapsed: false,
           items: [
             {
-              text: '高频面经与设计题',
+              text: '核心面经库',
               collapsed: false,
               items: [
-                { text: '高频速览', link: '/interviews/02-ai-agent/highlights' },
-                { text: '面试题与面经合集', link: '/interviews/02-ai-agent/questions' },
+                { text: '提示词与大模型调用题', link: '/interviews/02-ai-agent/prompt-engineering' },
+                { text: '检索增强生成(RAG)真题', link: '/interviews/02-ai-agent/rag-system' },
+                { text: 'Agent 架构设计题', link: '/interviews/02-ai-agent/architecture-design' },
               ]
             }
           ],
@@ -254,9 +255,9 @@ export default defineConfig({
               text: '量化实战与推导',
               collapsed: false,
               items: [
-                { text: '高频速览', link: '/interviews/03-quant-finance/highlights' },
-                { text: '简历面', link: '/interviews/03-quant-finance/resume-and-hr' },
-                { text: '知识面', link: '/interviews/03-quant-finance/knowledge-questions' },
+                { text: '概率与统计推导题', link: '/interviews/03-quant-finance/math-stats' },
+                { text: '期权与衍生品定价题', link: '/interviews/03-quant-finance/derivatives' },
+                { text: '量化代码与算法题', link: '/interviews/03-quant-finance/coding-algorithms' },
               ]
             }
           ],
@@ -266,11 +267,11 @@ export default defineConfig({
           collapsed: true,
           items: [
             {
-              text: '产品基础与业务',
+              text: '产品实战面经',
               collapsed: false,
               items: [
-                { text: '问题清单', link: '/interviews/04-product-manager/jd-and-qa' },
-                { text: '术语清单', link: '/interviews/04-product-manager/glossary' },
+                { text: '产品嗅觉与需求拆解', link: '/interviews/04-product-manager/product-sense' },
+                { text: '策略与交互设计', link: '/interviews/04-product-manager/strategy-design' },
               ]
             }
           ],
