@@ -12,7 +12,7 @@ outline: deep
 
 补充入口：
 
-- 若你希望先搭建知识框架，再刷题，先看 [`SQL 复习讲义（业务分析向）`](/knowledge/01-data-infrastructure/sql/sql-review-handbook)。
+- 若你希望先搭建知识框架，再刷题，先看 [`SQL 与数据库基础总览`](/knowledge/01-data-infrastructure/sql/overview) 及其下的各个模块化讲义。
 
 #### 1. 按分类筛选并计算数量
 
