@@ -5,7 +5,6 @@ outline: deep
 
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
-
 ### 四、Tool Calling 与函数调用
 
 Agent 和普通 Chatbot 的重要区别，是 Agent 可以调用外部工具完成动作，例如查数据库、调用 API、读写文件、搜索网页、发起审批等。
@@ -29,8 +28,7 @@ Agent 和普通 Chatbot 的重要区别，是 Agent 可以调用外部工具完�
 
 ---
 
-
-## 第11课：Skills 系统与 ClawHub 生态
+## Skills 系统与 ClawHub 生态
 
 > **第三阶段：进阶实战** | 
 
@@ -41,8 +39,6 @@ Agent 和普通 Chatbot 的重要区别，是 Agent 可以调用外部工具完�
 理解 OpenClaw 三层能力体系（Tools → Skills → Plugins）的设计哲学，掌握 Skills 的编写方式和 ClawHub 生态的使用方法。
 
 ---
-
-
 
 ### 一、三层能力体系全景
 
@@ -398,7 +394,7 @@ Skills 本质上是**结构化的、可复用的、可分享的 Prompt Engineeri
 
 ---
 
-## 第12课：MCP 协议：Agent 的通用语言
+## MCP 协议：Agent 的通用语言
 
 > **第三阶段：进阶实战** | 
 
@@ -409,8 +405,6 @@ Skills 本质上是**结构化的、可复用的、可分享的 Prompt Engineeri
 理解 MCP（Model Context Protocol）协议的设计理念和技术架构，掌握 OpenClaw 中 MCP 的集成方式，能够分析 MCP 工具定义并对比直接 API 调用的优劣。
 
 ---
-
-
 
 ### 一、什么是 MCP（Model Context Protocol）
 

@@ -5,7 +5,6 @@ outline: deep
 
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
-
 ### 六、Agent 架构与核心机制
 
 Agent 的关键不只是调用模型，而是让系统具备“理解任务、规划步骤、调用工具、观察结果、继续决策”的闭环。
@@ -31,10 +30,7 @@ Agent 的关键不只是调用模型，而是让系统具备“理解任务、�
 
 ---
 
-
-## 第二课：Agent 的核心概念——Tool Calling 与 ReAct
-
-| [下一课：OpenClaw 是什么 →](./03-what-is-openclaw.md)
+## Agent 的核心概念——Tool Calling 与 ReAct
 
 ---
 
@@ -684,7 +680,7 @@ Agent 执行任务时，Context Window 里会塞满各种信息：
 
 ---
 
-## 第六课：整体架构 — Fat Gateway 模式
+## 整体架构 — Fat Gateway 模式
 
 > **阶段二 · 核心架构** |  | [目录](../README.md)
 
@@ -703,8 +699,6 @@ Agent 执行任务时，Context Window 里会塞满各种信息：
 7. **面试核心**：能完整说出"为什么 OpenClaw 要用 Fat Gateway 模式"的设计推演。
 
 ---
-
-
 
 ### 1. 什么是 Gateway？
 
@@ -1283,7 +1277,7 @@ JSON-RPC 2.0 的核心优势：
 
 ---
 
-## 第七课：Agent Runner — 消息如何被处理
+## Agent Runner — 消息如何被处理
 
 > **阶段二 · 核心架构** |  | [目录](../README.md)
 
@@ -1971,13 +1965,11 @@ interface AgentRunLoopResult {
 
 ---
 
-## 第八课：ReAct 循环 — Agent 的大脑回路
+## ReAct 循环 — Agent 的大脑回路
 
 > **阶段二 · 核心架构** |  | [目录](../README.md)
 
 ---
-
-
 
 ### 本课目标
 
@@ -2761,13 +2753,11 @@ const tool = {
 
 ---
 
-## 第十课：Memory 系统 — 让 AI 拥有记忆
+## Memory 系统 — 让 AI 拥有记忆
 
 > **阶段二 · 核心架构** |  | [目录](../README.md)
 
 ---
-
-
 
 ### 本课目标
 
@@ -3285,7 +3275,6 @@ MEMORY.md:
   │  (向量数据库)    │
   └──────────────────┘
 
-
 2. 检索阶段（读取时）:
 
   用户的问题: "之前讨论的性能问题"
@@ -3413,7 +3402,6 @@ Memory Flush 的触发时机:
        │
        └──▶ Memory Flush: 把压缩过程中发现的关键信息写入 MEMORY.md
             (这样即使 Compaction 丢失了细节，MEMORY.md 里还有)
-
 
   流程图:
   
@@ -3643,7 +3631,7 @@ Memory Flush 的触发时机:
 
 ## 系统设计题：如何设计一个 Agent 系统
 
-> **第四阶段 · 面试冲刺** | 第18课
+> **第四阶段 · 面试冲刺** 
 
 **导航**：
 

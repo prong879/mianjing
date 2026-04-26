@@ -5,7 +5,6 @@ outline: deep
 
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
-
 ### 七、Agent 框架与开发生态
 
 面试里经常会问是否用过相关框架。重点不是背所有框架 API，而是能讲清楚框架解决了什么问题、适合什么场景。
@@ -31,10 +30,7 @@ outline: deep
 
 ---
 
-
-## 第三课：OpenClaw 是什么？为什么它这么火？
-
-| [下一课：安装 OpenClaw →](./04-install-openclaw.md)
+## OpenClaw 是什么？为什么它这么火？
 
 ---
 
@@ -521,9 +517,7 @@ D. 管理 Skills 插件
 
 ---
 
-## 第四课：动手安装 OpenClaw
-
-| [下一课：第一次对话 →](./05-first-conversation.md)
+## 动手安装 OpenClaw
 
 ---
 
@@ -1228,9 +1222,7 @@ npm install -g openclaw
 
 ---
 
-## 第五课：第一次对话——Hello OpenClaw！
-
-| [下一课：Gateway 架构 →](./06-gateway-architecture.md)
+## 第一次对话——Hello OpenClaw！
 
 ---
 
@@ -1867,7 +1859,7 @@ OpenClaw 支持两种交互模式——CLI 模式适合快速提问和脚本自�
 
 ---
 
-## 第14课：插件开发：写你的第一个 Plugin
+## 插件开发：写你的第一个 Plugin
 
 > **第三阶段：进阶实战** | 
 
@@ -2555,7 +2547,7 @@ When the user asks about weather, use the `get_weather` tool.
 
 ## 源码导读：关键模块逐行分析
 
-> **第四阶段 · 面试冲刺** | 第17课
+> **第四阶段 · 面试冲刺** 
 
 **导航**：
 
