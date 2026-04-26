@@ -96,6 +96,13 @@ export default defineConfig({
               ]
             },
             {
+              text: '产品经理',
+              collapsed: false,
+              items: [
+                { text: '专业术语清单', link: '/knowledge/04-business-product/product-manager/terminology' },
+              ]
+            },
+            {
               text: '数据产品',
               collapsed: true,
               items: [
@@ -223,6 +230,7 @@ export default defineConfig({
           text: '产品经理岗面经',
           collapsed: true,
           items: [
+            { text: '产品经理面试速记', link: '/interviews/04-product-manager/interview-transcript' },
             { text: '产品嗅觉与需求拆解', link: '/interviews/04-product-manager/product-sense' },
             { text: '策略与交互设计', link: '/interviews/04-product-manager/strategy-design' },
           ],
