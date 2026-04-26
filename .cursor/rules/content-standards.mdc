@@ -1,0 +1,31 @@
+---
+description: 知识库的统一内容排版、格式与静态资源管理规范
+globs: docs/**/*.md
+alwaysApply: false
+---
+
+# 知识库内容规范 (Content Standards)
+
+在编写、扩充面经与知识库时，请严格遵守此高内聚规范。所有的 Markdown 文件均直接在 `docs/` 目录下编辑。**原有的 `归档/` 目录和自动拆分工作流已废弃。**
+
+## 1. 静态资源（图片等）管理
+- **存放位置**：所有新增图片必须保存到 `docs/public/images/` 下。
+- **命名规范**：全小写英文、数字和中划线（如 `ab-test-funnel.png`），避免空格和中文。
+- **引用路径**：Markdown 中引用必须使用绝对路径 `/images/xxx.png`。
+  - ✅ 正确：`![示例图](/images/demo.png)`
+  - ❌ 错误：`![示例图](../../public/images/demo.png)`、`![示例图](./images/demo.png)`
+
+## 2. Frontmatter（元数据）
+对于所有在 `docs/` 下新建的文件，必须在顶部添加 YAML Frontmatter 并在右侧渲染大纲：
+```markdown
+---
+title: "你的页面标题"
+outline: deep
+---
+```
+
+## 3. 文本排版与格式
+- **标题**：优先使用 `##` 和 `###`，标题与正文之间空一行。
+- **标点排版**：中英文之间、中文与数字之间必须保留一个半角空格（如 `在 Python 中处理 100 万条数据`）。
+- **专有名词**：严格区分大小写（如 `MySQL`, `Python`, `AI Agent`）。
+- **代码块**：必须指定语言标识符（如 `sql`, `python`, `javascript`）。
