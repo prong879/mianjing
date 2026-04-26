@@ -17,7 +17,8 @@ Use this skill when the user sends you new information, images, screenshots, or 
    - **Provide Detailed Answers**: If the provided materials lack answers or the answers are incomplete, you MUST act as an expert and provide a comprehensive, accurate answer. Use the `WebSearch` tool if you need to verify facts or find the most up-to-date industry standard answers.
    - Identify whether it's a concept (Knowledge) or a question/transcript (Interview).
    - Identify the technical domain (SQL, Python, Product, AI Agent, Quant).
-   - **CRITICAL**: The knowledge base uses a strict 6-pillar ability structure (`01-data-infrastructure`, `02-python-data`, `03-statistics-experiment`, `04-business-product`, `05-ai-ml`, `06-quant-finance`). Before deciding on a folder, you MUST use the `Read` tool to inspect `docs/.vitepress/config.ts` to see the exact allowed directory paths. NEVER invent new top-level directories.
+   - **CRITICAL**: The knowledge base uses a strict 6-pillar ability structure (`01` to `06`) and the interview bank uses a strict 4-role structure (`01` to `04`). Before deciding on a folder, you MUST use the `Read` tool to inspect `docs/.vitepress/config.ts` to see the exact allowed directory paths.
+   - **🔴 RED LINE**: NEVER invent new top-level directories or categories (e.g. `07-new-skill` or `05-new-role`). If the user's content falls completely outside the existing framework, you MUST STOP AND ASK THE USER: "The content exceeds the current structural boundaries. Shall I create a new top-level category for this?" Only proceed after explicit user confirmation.
    - **Extract Metadata**: Identify any company names (e.g., ByteDance, Tencent), interview stages (e.g., 1st round, HR), or years from the prompt. Pay special attention to whether it is a **written test (笔试)** or **coding task (机试/手撕代码)**.
 
 2. **Handle Images:**

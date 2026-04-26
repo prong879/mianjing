@@ -17,7 +17,8 @@ Use this skill when the user asks you to read, organize, or incorporate existing
 
 2. **Categorize the Content:**
    - Determine if the content is **Knowledge** (concepts, tutorials, architectures) or **Interviews** (Q&A, specific real-world interview transcripts).
-   - **CRITICAL**: The repository uses a strict 6-pillar ability structure. You MUST use the `Read` tool to read `docs/.vitepress/config.ts` first to understand the exact allowed directory paths (e.g., `01-data-infrastructure/sql`, `05-ai-ml/ai-agent`). Do not use legacy flat directory structures and NEVER invent new top-level folders.
+   - **CRITICAL**: The repository uses a strict 6-pillar ability structure for knowledge and 4-role structure for interviews. You MUST use the `Read` tool to read `docs/.vitepress/config.ts` first to understand the exact allowed directory paths.
+   - **🔴 RED LINE**: Do not use legacy flat directory structures. NEVER invent new top-level folders (e.g. `07-xxx`). If the content requires adjusting or expanding the established root framework, you MUST halt execution and ask the user for permission to create a new top-level directory. Only proceed after user confirmation.
 
 3. **Draft the Markdown Pages:**
    - Write the content directly into `docs/` using the rules defined in `.cursor/rules/content-standards.mdc`.
