@@ -38,3 +38,7 @@ Use this skill when the user sends you new information, images, screenshots, or 
    - **CRITICAL:** Before committing, you MUST present the proposed commit message to the user and ask for their confirmation.
    - Once the user confirms, use the `Shell` tool to commit the newly integrated content to the git repository.
    - **MUST follow the Git standards defined in `.cursor/rules/git-standards.mdc`** (e.g., `feat(interviews): 新增...`).
+
+6. **Preserve Original Source Files (🔴 RED LINE):**
+   - NEVER delete, move, or modify the user's original source files (e.g., files in `归档/` or any files provided as input) after incorporating them into the knowledge base.
+   - The AI must always leave the original files intact to prevent data loss, unless the user explicitly and unambiguously orders the deletion of those specific source files.
