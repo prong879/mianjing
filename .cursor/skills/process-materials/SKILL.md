@@ -17,7 +17,7 @@ Use this skill when the user asks you to read, organize, or incorporate existing
 
 2. **Categorize the Content:**
    - Determine if the content is **Knowledge** (concepts, tutorials, architectures) or **Interviews** (Q&A, specific real-world interview transcripts).
-   - Determine the correct sub-directory under `docs/knowledge/` (e.g., `01-data-infrastructure/sql`, `05-ai-ml/ai-agent`) or `docs/interviews/` (e.g., `01-data-analytics/sql`, `02-ai-agent`). Do not use legacy flat directory structures.
+   - **CRITICAL**: The repository uses a strict 6-pillar ability structure. You MUST use the `Read` tool to read `docs/.vitepress/config.ts` first to understand the exact allowed directory paths (e.g., `01-data-infrastructure/sql`, `05-ai-ml/ai-agent`). Do not use legacy flat directory structures and NEVER invent new top-level folders.
 
 3. **Draft the Markdown Pages:**
    - Write the content directly into `docs/` using the rules defined in `.cursor/rules/content-standards.mdc`.

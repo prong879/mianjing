@@ -17,6 +17,7 @@ Use this skill when the user sends you new information, images, screenshots, or 
    - **Provide Detailed Answers**: If the provided materials lack answers or the answers are incomplete, you MUST act as an expert and provide a comprehensive, accurate answer. Use the `WebSearch` tool if you need to verify facts or find the most up-to-date industry standard answers.
    - Identify whether it's a concept (Knowledge) or a question/transcript (Interview).
    - Identify the technical domain (SQL, Python, Product, AI Agent, Quant).
+   - **CRITICAL**: The knowledge base uses a strict 6-pillar ability structure (`01-data-infrastructure`, `02-python-data`, `03-statistics-experiment`, `04-business-product`, `05-ai-ml`, `06-quant-finance`). Before deciding on a folder, you MUST use the `Read` tool to inspect `docs/.vitepress/config.ts` to see the exact allowed directory paths. NEVER invent new top-level directories.
    - **Extract Metadata**: Identify any company names (e.g., ByteDance, Tencent), interview stages (e.g., 1st round, HR), or years from the prompt.
 
 2. **Handle Images:**
