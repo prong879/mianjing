@@ -18,7 +18,7 @@ Use this skill when the user sends you new information, images, screenshots, or 
    - Identify whether it's a concept (Knowledge) or a question/transcript (Interview).
    - Identify the technical domain (SQL, Python, Product, AI Agent, Quant).
    - **CRITICAL**: The knowledge base uses a strict 6-pillar ability structure (`01-data-infrastructure`, `02-python-data`, `03-statistics-experiment`, `04-business-product`, `05-ai-ml`, `06-quant-finance`). Before deciding on a folder, you MUST use the `Read` tool to inspect `docs/.vitepress/config.ts` to see the exact allowed directory paths. NEVER invent new top-level directories.
-   - **Extract Metadata**: Identify any company names (e.g., ByteDance, Tencent), interview stages (e.g., 1st round, HR), or years from the prompt.
+   - **Extract Metadata**: Identify any company names (e.g., ByteDance, Tencent), interview stages (e.g., 1st round, HR), or years from the prompt. Pay special attention to whether it is a **written test (笔试)** or **coding task (机试/手撕代码)**.
 
 2. **Handle Images:**
    - If the user provides an image, and you need to save or reference it, the image MUST go into `docs/public/images/`.
@@ -26,7 +26,8 @@ Use this skill when the user sends you new information, images, screenshots, or 
 
 3. **Integrate the Content:**
    - Search the codebase using the `Glob` or `Grep` tools to see if a relevant file already exists (e.g., `docs/interviews/01-data-analytics/sql/sql-exercises.md`).
-   - If a matching file exists, append or merge the new content into the relevant section. Ensure consistent heading levels. **Also append tags/metadata (like `> 标签：字节跳动，一面`) under the specific question.**
+   - If a matching file exists, append or merge the new content into the relevant section. Ensure consistent heading levels. **Also append tags/metadata (like `> 🏷️ 标签：字节跳动，一面，笔试，手撕代码`) under the specific question.**
+   - **Code Blocks**: When the question or answer involves code, strictly use Markdown code blocks with the correct language identifier (e.g., ` ```python `) and ensure proper formatting and indentation.
    - If it's a completely new topic, create a new Markdown file adhering to `.cursor/rules/content-standards.mdc` (including YAML Frontmatter **with `tags`**). Ensure it is placed in the correct numbered ability-pillar directory (e.g. `docs/knowledge/05-ai-ml/`).
 
 4. **Update the Sidebar (If Applicable):**
