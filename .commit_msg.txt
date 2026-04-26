@@ -1,5 +1,0 @@
-Fix: resolve dead links in interview indices
-
-- Fix incorrectly cased directory names (Python-statistics -> python-statistics)
-- Fix incorrectly cased file names (Python-exercises -> python-exercises)
-- Ensure docs:build passes successfully without dead link errors
