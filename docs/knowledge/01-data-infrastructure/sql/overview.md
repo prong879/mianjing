@@ -38,7 +38,7 @@ outline: deep
 ### 二、系统化学习入口
 
 - 知识点模块化练习：请从左侧侧边栏按模块（如单表查询、多表连接、窗口函数等）循序渐进复习。
-- 7 天训练营：[`SQL 7 天专项训练`](/interviews/01-data-analytics/sql/sql-7day-camp)
+- 7 天训练营：[`SQL 7 天专项训练`](/knowledge/01-data-infrastructure/sql/08-sql-7day-camp)
 - 题库刷题页：[`SQL 与数据库习题`](/interviews/01-data-analytics/sql/sql-exercises)
 
 建议顺序：先看讲义建立语法与指标框架，再按 7 天训练做题，最后用题库页做补充强化。

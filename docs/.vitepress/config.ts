@@ -56,6 +56,7 @@ export default defineConfig({
                 { text: '05 窗口函数', link: '/knowledge/01-data-infrastructure/sql/05-window-functions' },
                 { text: '06 业务指标与场景', link: '/knowledge/01-data-infrastructure/sql/06-business-scenarios' },
                 { text: '07 综合与面试题', link: '/knowledge/01-data-infrastructure/sql/07-comprehensive-interview' },
+                { text: '08 SQL 7天专项训练', link: '/knowledge/01-data-infrastructure/sql/08-sql-7day-camp' },
               ]
             },
             {
@@ -188,92 +189,43 @@ export default defineConfig({
           text: '数据与分析岗面经',
           collapsed: false,
           items: [
-            {
-              text: '高频速览',
-              collapsed: false,
-              items: [
-                { text: '高频速览', link: '/interviews/01-data-analytics/highlights' },
-              ]
-            },
-            {
-              text: 'SQL 实战题',
-              collapsed: false,
-              items: [
-                { text: 'SQL 习题', link: '/interviews/01-data-analytics/sql/sql-exercises' },
-                { text: 'SQL 7 天专项训练', link: '/interviews/01-data-analytics/sql/sql-7day-camp' },
-              ]
-            },
-            {
-              text: 'Python 与统计题',
-              collapsed: false,
-              items: [
-                { text: '统计学习题', link: '/interviews/01-data-analytics/python-statistics/statistics-exercises' },
-                { text: 'Python 习题', link: '/interviews/01-data-analytics/python-statistics/python-exercises' },
-              ]
-            },
-            {
-              text: '业务与数仓题',
-              collapsed: false,
-              items: [
-                { text: 'BI 习题', link: '/interviews/01-data-analytics/business-warehouse/bi-exercises' },
-                { text: '业务与指标习题', link: '/interviews/01-data-analytics/business-warehouse/business-exercises' },
-                { text: 'A/B 与因果习题', link: '/interviews/01-data-analytics/business-warehouse/ab-exercises' },
-                { text: '增长与产品习题', link: '/interviews/01-data-analytics/business-warehouse/growth-exercises' },
-                { text: '数仓与数据产品习题', link: '/interviews/01-data-analytics/business-warehouse/warehouse-exercises' },
-              ]
-            },
-            {
-              text: '机器学习与综合',
-              collapsed: true,
-              items: [
-                { text: '机器学习习题', link: '/interviews/01-data-analytics/machine-learning/ml-exercises' },
-                { text: '综合案例题', link: '/interviews/01-data-analytics/machine-learning/case-exercises' },
-              ]
-            }
+            { text: '高频速览', link: '/interviews/01-data-analytics/highlights' },
+            { text: 'SQL 习题', link: '/interviews/01-data-analytics/sql/sql-exercises' },
+            { text: 'Python 习题', link: '/interviews/01-data-analytics/python-statistics/python-exercises' },
+            { text: '统计学习题', link: '/interviews/01-data-analytics/python-statistics/statistics-exercises' },
+            { text: 'BI 与可视化题', link: '/interviews/01-data-analytics/business-warehouse/bi-exercises' },
+            { text: '业务与指标题', link: '/interviews/01-data-analytics/business-warehouse/business-exercises' },
+            { text: 'A/B 测试题', link: '/interviews/01-data-analytics/business-warehouse/ab-exercises' },
+            { text: '产品与增长题', link: '/interviews/01-data-analytics/business-warehouse/growth-exercises' },
+            { text: '数仓与数据产品题', link: '/interviews/01-data-analytics/business-warehouse/warehouse-exercises' },
+            { text: '机器学习题', link: '/interviews/01-data-analytics/machine-learning/ml-exercises' },
+            { text: '综合案例题', link: '/interviews/01-data-analytics/machine-learning/case-exercises' },
           ],
         },
         {
           text: 'AI Agent 岗面经',
           collapsed: false,
           items: [
-            {
-              text: '核心面经库',
-              collapsed: false,
-              items: [
-                { text: '提示词与大模型调用题', link: '/interviews/02-ai-agent/prompt-engineering' },
-                { text: '检索增强生成(RAG)真题', link: '/interviews/02-ai-agent/rag-system' },
-                { text: 'Agent 架构设计题', link: '/interviews/02-ai-agent/architecture-design' },
-              ]
-            }
+            { text: '提示词与大模型调用题', link: '/interviews/02-ai-agent/prompt-engineering' },
+            { text: '检索增强生成(RAG)真题', link: '/interviews/02-ai-agent/rag-system' },
+            { text: 'Agent 架构设计题', link: '/interviews/02-ai-agent/architecture-design' },
           ],
         },
         {
           text: '量化研究岗面经',
           collapsed: false,
           items: [
-            {
-              text: '量化实战与推导',
-              collapsed: false,
-              items: [
-                { text: '概率与统计推导题', link: '/interviews/03-quant-finance/math-stats' },
-                { text: '期权与衍生品定价题', link: '/interviews/03-quant-finance/derivatives' },
-                { text: '量化代码与算法题', link: '/interviews/03-quant-finance/coding-algorithms' },
-              ]
-            }
+            { text: '概率与统计推导题', link: '/interviews/03-quant-finance/math-stats' },
+            { text: '期权与衍生品定价题', link: '/interviews/03-quant-finance/derivatives' },
+            { text: '量化代码与算法题', link: '/interviews/03-quant-finance/coding-algorithms' },
           ],
         },
         {
           text: '产品经理岗面经',
           collapsed: true,
           items: [
-            {
-              text: '产品实战面经',
-              collapsed: false,
-              items: [
-                { text: '产品嗅觉与需求拆解', link: '/interviews/04-product-manager/product-sense' },
-                { text: '策略与交互设计', link: '/interviews/04-product-manager/strategy-design' },
-              ]
-            }
+            { text: '产品嗅觉与需求拆解', link: '/interviews/04-product-manager/product-sense' },
+            { text: '策略与交互设计', link: '/interviews/04-product-manager/strategy-design' },
           ],
         },
       ],
