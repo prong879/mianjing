@@ -1,0 +1,5 @@
+Refactor: extract knowledge points from interview exercises
+
+- Clean up formatting and structure in interview exercises across all categories
+- Extract large sections of causal inference, A/B testing, and ML model theory into dedicated knowledge base articles
+- Ensure interview files maintain a strict question-and-answer format

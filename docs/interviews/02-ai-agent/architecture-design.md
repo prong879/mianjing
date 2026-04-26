@@ -68,7 +68,7 @@ outline: deep
 
 - **开发 Agent 时，你会用哪些 Python 库？说说它们在 Agent 开发中的具体用途。**
 
-> **参考回答**：TODO
+> **参考回答**：
 > - **大模型交互**：`openai`、`anthropic` 或开源的 `vllm` 客户端。
 > - **编排与状态管理**：`langgraph`（图状态流转）、`langchain`（基础组件）、`autogen`（多智能体）。
 > - **向量检索**：`chromadb`、`faiss-cpu`、`pymilvus`。
@@ -76,7 +76,7 @@ outline: deep
 
 - **你了解 LangChain / LlamaIndex / LangGraph 吗？说说它们在 Agent 开发中的优势和使用场景。**
 
-> **参考回答**：TODO
+> **参考回答**：
 > - **LangChain**：组件丰富，适合快速搭建原型，但封装过深，定制化较难。
 > - **LlamaIndex**：在 RAG 数据接入、索引构建和文档解析上非常强大，适合以检索为核心的 Agent。
 > - **LangGraph**：把 Agent 建模为状态机（图结构），支持循环（Cycles）、持久化状态和人工介入，适合复杂的生产级 Agent 开发。
@@ -87,7 +87,7 @@ outline: deep
 
 - **多智能体可以分为哪几种架构？层级 Agent 和递交 Agent 的使用场景有什么区别？**
 
-> **参考回答**：TODO
+> **参考回答**：
 > - **架构类型**：包括集中式（Supervisor 管理子 Agent）、协作式（Agent 自由对话）和层级式（树状结构）。
 > - **层级 Agent (Hierarchical)**：有一个主 Agent 拆解任务，分发给下方特定领域的子 Agent，最后汇总。适合明确可解耦的复杂任务。
 > - **递交 Agent (Handoff / Network)**：Agent 之间互相转移控制权，类似客服转接。适合流程式的业务，比如从“接单 Agent”递交给“售后 Agent”。
@@ -118,7 +118,7 @@ outline: deep
 
 - **多 Agent 协同时，如何避免职责重叠、重复调用工具或互相冲突？**
 
-> **参考回答**：TODO
+> **参考回答**：
 > 1. **清晰的系统提示（System Prompt）**：为每个 Agent 设定严格的边界和专注领域。
 > 2. **能力隔离**：不同的 Agent 只赋予特定的工具，避免工具滥用。
 > 3. **全局防重机制**：在共享状态中记录“已调用的工具及参数”和“已获得的结论”，Agent 执行前先检查状态。
