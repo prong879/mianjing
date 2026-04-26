@@ -5,7 +5,7 @@ export default defineConfig({
   title: '面经知识库',
   description: '数据分析 / 商业分析 / 数据科学 / AI Agent / 量化 — 技术栈知识 + 岗位面试题',
   lang: 'zh-CN',
-  base: '/shixi/',
+  base: '/mianjing/',
   srcDir: '.',
   lastUpdated: true,
 
