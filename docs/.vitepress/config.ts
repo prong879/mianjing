@@ -56,7 +56,6 @@ export default defineConfig({
                 { text: '05 窗口函数', link: '/knowledge/01-data-infrastructure/sql/05-window-functions' },
                 { text: '06 业务指标与场景', link: '/knowledge/01-data-infrastructure/sql/06-business-scenarios' },
                 { text: '07 综合与面试题', link: '/knowledge/01-data-infrastructure/sql/07-comprehensive-interview' },
-                { text: '08 SQL 7天专项训练', link: '/knowledge/01-data-infrastructure/sql/08-sql-7day-camp' },
               ]
             },
             {
