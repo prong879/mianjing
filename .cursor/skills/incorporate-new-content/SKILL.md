@@ -41,4 +41,5 @@ Use this skill when the user sends you new information, images, screenshots, or 
 
 6. **Preserve Original Source Files (🔴 RED LINE):**
    - NEVER delete, move, or modify the user's original source files (e.g., files in `归档/` or any files provided as input) after incorporating them into the knowledge base.
-   - The AI must always leave the original files intact to prevent data loss, unless the user explicitly and unambiguously orders the deletion of those specific source files.
+   - **Archived files (`归档/`) are STRICTLY READ-ONLY**. "Once archived, it is never modified" (归档了就是不改了).
+   - The AI must always leave the original files exactly as they are to prevent data loss. Do not delete or edit them even after successfully migrating their content.
