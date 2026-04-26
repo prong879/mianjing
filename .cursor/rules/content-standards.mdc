@@ -15,14 +15,20 @@ alwaysApply: false
   - ✅ 正确：`![示例图](/images/demo.png)`
   - ❌ 错误：`![示例图](../../public/images/demo.png)`、`![示例图](./images/demo.png)`
 
-## 2. Frontmatter（元数据）
-对于所有在 `docs/` 下新建的文件，必须在顶部添加 YAML Frontmatter 并在右侧渲染大纲：
+## 2. Frontmatter（元数据）与标签 (Tags)
+对于所有在 `docs/` 下新建的文件，必须在顶部添加 YAML Frontmatter 并在右侧渲染大纲。如果内容涉及特定公司（如字节跳动、腾讯）或特定技术标签，请使用 `tags` 字段标注，以利用 VitePress 的本地搜索功能：
 ```markdown
 ---
 title: "你的页面标题"
 outline: deep
+tags:
+  - 字节跳动
+  - 腾讯
+  - 商业分析
 ---
 ```
+
+对于追加到已存在文件中的面试题，你可以在该题目的标题或引用块中加上相关标签信息，例如 `> 标签：字节跳动，2025秋招，一面`。
 
 ## 3. 文本排版与格式
 - **标题**：优先使用 `##` 和 `###`，标题与正文之间空一行。

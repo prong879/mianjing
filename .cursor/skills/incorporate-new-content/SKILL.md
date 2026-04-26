@@ -15,6 +15,7 @@ Use this skill when the user sends you new information, images, screenshots, or 
    - Read the provided text or image.
    - Identify whether it's a concept (Knowledge) or a question/transcript (Interview).
    - Identify the technical domain (SQL, Python, Product, AI Agent, Quant).
+   - **Extract Metadata**: Identify any company names (e.g., ByteDance, Tencent), interview stages (e.g., 1st round, HR), or years from the prompt.
 
 2. **Handle Images:**
    - If the user provides an image, and you need to save or reference it, the image MUST go into `docs/public/images/`.
@@ -22,8 +23,8 @@ Use this skill when the user sends you new information, images, screenshots, or 
 
 3. **Integrate the Content:**
    - Search the codebase using the `Glob` or `Grep` tools to see if a relevant file already exists (e.g., `docs/interviews/data-analytics/sql-exercises.md`).
-   - If a matching file exists, append or merge the new content into the relevant section. Ensure consistent heading levels.
-   - If it's a completely new topic, create a new Markdown file adhering to `.cursor/rules/content-standards.mdc` (including YAML Frontmatter).
+   - If a matching file exists, append or merge the new content into the relevant section. Ensure consistent heading levels. **Also append tags/metadata (like `> 标签：字节跳动，一面`) under the specific question.**
+   - If it's a completely new topic, create a new Markdown file adhering to `.cursor/rules/content-standards.mdc` (including YAML Frontmatter **with `tags`**).
 
 4. **Update the Sidebar (If Applicable):**
    - If a *new* file was created, update `docs/.vitepress/config.ts` so the user can navigate to it.
