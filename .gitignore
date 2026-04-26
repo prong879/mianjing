@@ -1,0 +1,7 @@
+node_modules/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+归档/
+学习、参考资料/
+.DS_Store
+.env
