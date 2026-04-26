@@ -3,7 +3,7 @@ title: "安全、合规与可靠性"
 outline: deep
 ---
 
-> 原文备份路径：`归档/AI Agent面经/AI Agent面经.md`（与站点并列，编辑时请直接改归档目录下源文件后重新运行 `npm run docs:split`）
+> 维护说明：请直接在 docs/ 目录维护本页内容。
 
 
 ### 十、安全、合规与可靠性

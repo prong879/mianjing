@@ -33,4 +33,4 @@ features:
 | 长期学习顺序 | [学习路线总览](/guide/roadmap) |
 | 7 天 / 3 天 / 面前 1 小时 | [考前冲刺](/guide/exam-cram) |
 
-源 Markdown 位于仓库 `归档/` 目录；站点正文由 `npm run docs:split` 从源文件生成，改原文后请重新运行该命令再构建。
+本仓库内容统一在 `docs/` 目录内维护；修改后按常规 VitePress 流程构建与部署即可。

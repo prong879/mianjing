@@ -3,7 +3,7 @@ title: "评估、测试与可观测性"
 outline: deep
 ---
 
-> 原文备份路径：`归档/AI Agent面经/AI Agent面经.md`（与站点并列，编辑时请直接改归档目录下源文件后重新运行 `npm run docs:split`）
+> 维护说明：请直接在 docs/ 目录维护本页内容。
 
 
 ### 九、评估、测试与可观测性

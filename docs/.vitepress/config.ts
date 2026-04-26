@@ -144,12 +144,20 @@ export default defineConfig({
             { text: '知识面', link: '/interviews/quant/knowledge-questions' },
           ],
         },
+        {
+          text: '产品经理',
+          collapsed: true,
+          items: [
+            { text: '问题清单', link: '/interviews/product-manager/jd-and-qa' },
+            { text: '术语清单', link: '/interviews/product-manager/glossary' },
+          ],
+        },
       ],
     },
 
     socialLinks: [],
     footer: {
-      message: '内容来自本地面经整理，运行 npm run docs:split 可从源 Markdown 重新生成',
+      message: '内容来自本地面经整理，请直接在 docs 目录维护与更新',
     },
   },
 })

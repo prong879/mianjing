@@ -30,6 +30,11 @@
 - [简历面](/interviews/quant/resume-and-hr)
 - [知识面](/interviews/quant/knowledge-questions)
 
+## 产品经理
+
+- [问题清单](/interviews/product-manager/jd-and-qa)
+- [术语清单](/interviews/product-manager/glossary)
+
 ---
 
 考前节奏可参考 [冲刺路线](/guide/exam-cram)。

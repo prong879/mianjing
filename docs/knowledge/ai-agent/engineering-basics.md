@@ -3,7 +3,7 @@ title: "编程基础与工程能力"
 outline: deep
 ---
 
-> 原文备份路径：`归档/AI Agent面经/AI Agent面经.md`（与站点并列，编辑时请直接改归档目录下源文件后重新运行 `npm run docs:split`）
+> 维护说明：请直接在 docs/ 目录维护本页内容。
 
 
 ### 一、编程基础与工程能力
