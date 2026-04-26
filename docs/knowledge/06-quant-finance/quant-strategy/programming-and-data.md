@@ -9,8 +9,8 @@ outline: deep
 
 ## 与通用数据向知识的衔接
 
-- 系统 **SQL 考点**：[SQL 与数据库](/knowledge/data-sql/overview)
-- 系统 **pandas 考点**：[Python 数据处理](/knowledge/python-data/overview)
+- 系统 **SQL 考点**：[SQL 与数据库](/knowledge/01-data-infrastructure/sql/overview)
+- 系统 **pandas 考点**：[Python 数据处理](/knowledge/02-python-data/python-core/overview)
 
 ### 二、 编程与数据处理
 

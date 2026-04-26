@@ -17,7 +17,7 @@ tags:
 - 每题先定义统计对象和口径
 - 做完检查：筛选条件、分组维度、连接关系、是否去重
 
-统一业务表与字段说明见：[`SQL 复习讲义（业务分析向）`](/knowledge/data-sql/sql-review-handbook)
+统一业务表与字段说明见：[`SQL 复习讲义（业务分析向）`](/knowledge/01-data-infrastructure/sql/sql-review-handbook)
 
 ## Day 1：单表查询基础
 
@@ -183,4 +183,4 @@ tags:
 - 对错题建立自己的“口径清单”
 - 二刷时优先训练口头解释能力
 
-需要完整参考答案时，可结合现有题库页：[`SQL 与数据库习题`](/interviews/data-analytics/sql-exercises)。
+需要完整参考答案时，可结合现有题库页：[`SQL 与数据库习题`](/interviews/01-data-analytics/sql/sql-exercises)。

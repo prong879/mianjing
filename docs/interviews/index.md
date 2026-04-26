@@ -4,36 +4,36 @@
 
 ## 数据分析 / 商业分析 / 数据科学
 
-- [高频速览](/interviews/data-analytics/highlights)
+- [高频速览](/interviews/01-data-analytics/highlights)
 
 与知识库模块一一对应，便于「学完一章 → 刷一章题」：
 
-- [SQL 习题](/interviews/data-analytics/sql-exercises)
-- [统计习题](/interviews/data-analytics/statistics-exercises)
-- [Python 习题](/interviews/data-analytics/python-exercises)
-- [BI 习题](/interviews/data-analytics/bi-exercises)
-- [业务与指标习题](/interviews/data-analytics/business-exercises)
-- [A/B 与因果习题](/interviews/data-analytics/ab-exercises)
-- [增长与产品习题](/interviews/data-analytics/growth-exercises)
-- [机器学习习题](/interviews/data-analytics/ml-exercises)
-- [数仓与数据产品习题](/interviews/data-analytics/warehouse-exercises)
-- [综合案例题](/interviews/data-analytics/case-exercises)
+- [SQL 习题](/interviews/01-data-analytics/sql/sql-exercises)
+- [统计习题](/interviews/01-data-analytics/python-statistics/statistics-exercises)
+- [Python 习题](/interviews/01-data-analytics/python-statistics/python-exercises)
+- [BI 习题](/interviews/01-data-analytics/business-warehouse/bi-exercises)
+- [业务与指标习题](/interviews/01-data-analytics/business-warehouse/business-exercises)
+- [A/B 与因果习题](/interviews/01-data-analytics/business-warehouse/ab-exercises)
+- [增长与产品习题](/interviews/01-data-analytics/business-warehouse/growth-exercises)
+- [机器学习习题](/interviews/01-data-analytics/machine-learning/ml-exercises)
+- [数仓与数据产品习题](/interviews/01-data-analytics/business-warehouse/warehouse-exercises)
+- [综合案例题](/interviews/01-data-analytics/machine-learning/case-exercises)
 
 ## AI Agent
 
-- [高频速览](/interviews/ai-agent/highlights)
-- [面试题与面经合集](/interviews/ai-agent/questions)（单页聚合，便于检索与打印）
+- [高频速览](/interviews/02-ai-agent/highlights)
+- [面试题与面经合集](/interviews/02-ai-agent/questions)（单页聚合，便于检索与打印）
 
 ## 量化
 
-- [高频速览](/interviews/quant/highlights)
-- [简历面](/interviews/quant/resume-and-hr)
-- [知识面](/interviews/quant/knowledge-questions)
+- [高频速览](/interviews/03-quant-finance/highlights)
+- [简历面](/interviews/03-quant-finance/resume-and-hr)
+- [知识面](/interviews/03-quant-finance/knowledge-questions)
 
 ## 产品经理
 
-- [问题清单](/interviews/product-manager/jd-and-qa)
-- [术语清单](/interviews/product-manager/glossary)
+- [问题清单](/interviews/04-product-manager/jd-and-qa)
+- [术语清单](/interviews/04-product-manager/glossary)
 
 ---
 

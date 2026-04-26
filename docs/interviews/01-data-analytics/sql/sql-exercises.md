@@ -12,8 +12,8 @@ outline: deep
 
 补充入口：
 
-- 若你希望按学习节奏递进训练，先看 [`SQL 7 天专项训练`](/interviews/data-analytics/sql-7day-camp)。
-- 若你希望先搭建知识框架，再刷题，先看 [`SQL 复习讲义（业务分析向）`](/knowledge/data-sql/sql-review-handbook)。
+- 若你希望按学习节奏递进训练，先看 [`SQL 7 天专项训练`](/interviews/01-data-analytics/sql/sql-7day-camp)。
+- 若你希望先搭建知识框架，再刷题，先看 [`SQL 复习讲义（业务分析向）`](/knowledge/01-data-infrastructure/sql/sql-review-handbook)。
 
 #### 1. 按分类筛选并计算数量
 

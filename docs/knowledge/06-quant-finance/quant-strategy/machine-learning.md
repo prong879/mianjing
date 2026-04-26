@@ -9,7 +9,7 @@ outline: deep
 
 ## 与通用数据向知识的衔接
 
-- 数据分析岗角度的 ML 基础：[机器学习基础](/knowledge/machine-learning/overview)
+- 数据分析岗角度的 ML 基础：[机器学习基础](/knowledge/05-ai-ml/machine-learning/overview)
 
 ### 六、 机器学习与算法及其他
 

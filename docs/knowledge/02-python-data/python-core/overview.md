@@ -9,7 +9,7 @@ outline: deep
 
 ## 与量化笔记的衔接
 
-- **防未来函数**、截面处理与回测清洗：[量化 · 编程与数据处理](/knowledge/quant-research/programming-and-data)
+- **防未来函数**、截面处理与回测清洗：[量化 · 编程与数据处理](/knowledge/06-quant-finance/quant-strategy/programming-and-data)
 
 ### 三、Python 与数据处理
 

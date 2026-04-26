@@ -9,7 +9,7 @@ outline: deep
 
 ## 与量化笔记的衔接
 
-- 因子 / 表格数据语境下的树模型与时序：[机器学习（量化）](/knowledge/quant-research/machine-learning)
+- 因子 / 表格数据语境下的树模型与时序：[机器学习（量化）](/knowledge/06-quant-finance/quant-strategy/machine-learning)
 
 ### 八、机器学习与数据挖掘基础
 

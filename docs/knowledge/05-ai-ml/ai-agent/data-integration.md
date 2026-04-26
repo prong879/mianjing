@@ -9,8 +9,8 @@ outline: deep
 
 ## 与数据向知识的衔接
 
-- SQL 与数据库基础：[SQL 与数据库](/knowledge/data-sql/overview)
-- 数仓与指标口径：[数据仓库与数据产品](/knowledge/data-warehouse-product/overview)
+- SQL 与数据库基础：[SQL 与数据库](/knowledge/01-data-infrastructure/sql/overview)
+- 数仓与指标口径：[数据仓库与数据产品](/knowledge/01-data-infrastructure/data-warehouse/overview)
 
 ### 八、数据、数据库与业务系统集成
 
