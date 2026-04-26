@@ -6,7 +6,7 @@ alwaysApply: false
 
 # VitePress 配置更新规范 (Sidebar Config)
 
-因为 `归档/` 拆分工作流已废弃，现在所有的页面新增都直接在 `docs/` 目录下进行。当添加了全新的 Markdown 页面后，**必须同步更新 `docs/.vitepress/config.ts`**，否则页面无法在侧边栏显示。
+现在所有的页面新增都直接在 `docs/` 目录下进行。当添加了全新的 Markdown 页面后，**必须同步更新 `docs/.vitepress/config.ts`**，否则页面无法在侧边栏显示。
 
 ## 1. 侧边栏配置修改
 在 `themeConfig.sidebar` 找到对应的板块（如 `/knowledge/` 或 `/interviews/`），在 `items` 数组中追加路由：
