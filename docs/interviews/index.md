@@ -9,8 +9,8 @@
 与知识库模块一一对应，便于「学完一章 → 刷一章题」：
 
 - [SQL 习题](/interviews/01-data-analytics/sql/sql-exercises)
-- [统计习题](/interviews/01-data-analytics/python-statistics/statistics-exercises)
-- [Python 习题](/interviews/01-data-analytics/python-statistics/python-exercises)
+- [统计习题](/interviews/01-data-analytics/Python-statistics/statistics-exercises)
+- [Python 习题](/interviews/01-data-analytics/Python-statistics/Python-exercises)
 - [BI 习题](/interviews/01-data-analytics/business-warehouse/bi-exercises)
 - [业务与指标习题](/interviews/01-data-analytics/business-warehouse/business-exercises)
 - [A/B 与因果习题](/interviews/01-data-analytics/business-warehouse/ab-exercises)

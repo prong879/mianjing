@@ -27,7 +27,7 @@ Use this skill when the user sends you new information, images, screenshots, or 
 
 3. **Integrate the Content:**
    - Search the codebase using the `Glob` or `Grep` tools to see if a relevant file already exists (e.g., `docs/interviews/01-data-analytics/sql/sql-exercises.md`).
-   - If a matching file exists, append or merge the new content into the relevant section. Ensure consistent heading levels. **Also append tags/metadata (like `> 🏷️ 标签：字节跳动，一面，笔试，手撕代码`) under the specific question.**
+   - If a matching file exists, append or merge the new content into the relevant section. Ensure consistent heading levels. **Also append tags/metadata (like `> 🏷️ 标签：字节跳动，一面，笔试，手撕代码`) with an empty line after the specific list item question (e.g. `- **The question?**`).**
    - **Code Blocks**: When the question or answer involves code, strictly use Markdown code blocks with the correct language identifier (e.g., ` ```python `) and ensure proper formatting and indentation.
    - If it's a completely new topic, create a new Markdown file adhering to `.cursor/rules/content-standards.mdc` (including YAML Frontmatter **with `tags`**). Ensure it is placed in the correct numbered ability-pillar directory (e.g. `docs/knowledge/05-ai-ml/`).
 

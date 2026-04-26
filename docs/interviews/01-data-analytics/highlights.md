@@ -6,7 +6,7 @@
 |--------|------|
 | P0 | [SQL 习题](/interviews/01-data-analytics/sql/sql-exercises) |
 | P0 | [A/B 与因果习题](/interviews/01-data-analytics/business-warehouse/ab-exercises) |
-| P1 | [统计习题](/interviews/01-data-analytics/python-statistics/statistics-exercises) |
+| P1 | [统计习题](/interviews/01-data-analytics/Python-statistics/statistics-exercises) |
 | P1 | [业务与指标习题](/interviews/01-data-analytics/business-warehouse/business-exercises) |
 | P2 | [综合案例题](/interviews/01-data-analytics/machine-learning/case-exercises) |
 
