@@ -676,13 +676,13 @@ Agent 执行任务时，Context Window 里会塞满各种信息：
 
 ---
 
- | [下一课：OpenClaw 是什么 →](./03-what-is-openclaw.md)
+ | [下一课：OpenClaw 是什么 →](./frameworks.md)
 
 ---
 
 ## 整体架构 — Fat Gateway 模式
 
-> **阶段二 · 核心架构** |  | [目录](../README.md)
+> **阶段二 · 核心架构** |  | [目录](/knowledge/05-ai-ml/ai-agent/learning-path)
 
 ---
 
@@ -1273,13 +1273,13 @@ JSON-RPC 2.0 的核心优势：
 
 ---
 
->  | [回到目录](../README.md)
+>  | [回到目录](/knowledge/05-ai-ml/ai-agent/learning-path)
 
 ---
 
 ## Agent Runner — 消息如何被处理
 
-> **阶段二 · 核心架构** |  | [目录](../README.md)
+> **阶段二 · 核心架构** |  | [目录](/knowledge/05-ai-ml/ai-agent/learning-path)
 
 ---
 
@@ -1961,13 +1961,13 @@ interface AgentRunLoopResult {
 
 ---
 
->  | [回到目录](../README.md)
+>  | [回到目录](/knowledge/05-ai-ml/ai-agent/learning-path)
 
 ---
 
 ## ReAct 循环 — Agent 的大脑回路
 
-> **阶段二 · 核心架构** |  | [目录](../README.md)
+> **阶段二 · 核心架构** |  | [目录](/knowledge/05-ai-ml/ai-agent/learning-path)
 
 ---
 
@@ -2749,13 +2749,13 @@ const tool = {
 
 ---
 
->  | [回到目录](../README.md)
+>  | [回到目录](/knowledge/05-ai-ml/ai-agent/learning-path)
 
 ---
 
 ## Memory 系统 — 让 AI 拥有记忆
 
-> **阶段二 · 核心架构** |  | [目录](../README.md)
+> **阶段二 · 核心架构** |  | [目录](/knowledge/05-ai-ml/ai-agent/learning-path)
 
 ---
 
@@ -3625,7 +3625,7 @@ Memory Flush 的触发时机:
 
 ---
 
->  | [回到目录](../README.md)
+>  | [回到目录](/knowledge/05-ai-ml/ai-agent/learning-path)
 
 ---
 

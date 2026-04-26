@@ -30,7 +30,7 @@ Prompt 不是简单写一句指令，而是把任务目标、角色、约束、�
 
 ## Context Window — 最核心的工程约束
 
-> **阶段二 · 核心架构** |  | [目录](../README.md)
+> **阶段二 · 核心架构** |  | [目录](/knowledge/05-ai-ml/ai-agent/learning-path)
 
 ---
 
@@ -931,4 +931,4 @@ hybrid 策略 — 按优先级逐步释放空间:
 
 ---
 
->  | [回到目录](../README.md)
+>  | [回到目录](/knowledge/05-ai-ml/ai-agent/learning-path)

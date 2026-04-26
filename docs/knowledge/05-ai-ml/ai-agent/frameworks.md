@@ -513,7 +513,7 @@ D. 管理 Skills 插件
 
 ---
 
- | [下一课：安装 OpenClaw →](./04-install-openclaw.md)
+ | [下一课：安装 OpenClaw →](./frameworks.md)
 
 ---
 
@@ -1218,7 +1218,7 @@ npm install -g openclaw
 
 ---
 
- | [下一课：第一次对话 →](./05-first-conversation.md)
+ | [下一课：第一次对话 →](./frameworks.md)
 
 ---
 
@@ -1855,7 +1855,7 @@ OpenClaw 支持两种交互模式——CLI 模式适合快速提问和脚本自�
 
 ---
 
- | [下一课：Gateway 架构 →](./06-gateway-architecture.md)
+ | [下一课：Gateway 架构 →](./frameworks.md)
 
 ---
 
