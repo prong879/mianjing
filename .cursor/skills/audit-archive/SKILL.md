@@ -29,5 +29,7 @@ Use this skill when the user asks to "check the archive", "audit the split", or 
    - Ensure all internal cross-links between documents work correctly.
 
 5. **Commit and Report:**
-   - Use the `Shell` tool to commit the refactored changes with a clear message detailing what content was salvaged or reorganized.
+   - **CRITICAL:** Before committing, you MUST present the proposed commit message to the user and ask for their confirmation.
+   - Once the user confirms, use the `Shell` tool to commit the refactored changes.
+   - **MUST follow the Git standards defined in `.cursor/rules/git-standards.mdc`** (e.g., `refactor(archive): 整理并迁移遗留数据`).
    - Summarize to the user what specific missing contents were found and where they were placed.

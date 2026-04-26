@@ -11,8 +11,10 @@ Use this skill when the user sends you new information, images, screenshots, or 
 
 ## Workflow
 
-1. **Analyze the User's Input:**
+1. **Analyze and Enhance the User's Input:**
    - Read the provided text or image.
+   - **Infer and Complete Questions**: If the provided image or text contains incomplete questions, truncated sentences, or lacks context, use your analytical skills to infer and reconstruct the complete question.
+   - **Provide Detailed Answers**: If the provided materials lack answers or the answers are incomplete, you MUST act as an expert and provide a comprehensive, accurate answer. Use the `WebSearch` tool if you need to verify facts or find the most up-to-date industry standard answers.
    - Identify whether it's a concept (Knowledge) or a question/transcript (Interview).
    - Identify the technical domain (SQL, Python, Product, AI Agent, Quant).
    - **Extract Metadata**: Identify any company names (e.g., ByteDance, Tencent), interview stages (e.g., 1st round, HR), or years from the prompt.
@@ -30,4 +32,6 @@ Use this skill when the user sends you new information, images, screenshots, or 
    - If a *new* file was created, update `docs/.vitepress/config.ts` so the user can navigate to it.
 
 5. **Commit the Changes:**
-   - Use the `Shell` tool to commit the newly integrated content to the git repository. Keep the commit message descriptive about what new knowledge was added.
+   - **CRITICAL:** Before committing, you MUST present the proposed commit message to the user and ask for their confirmation.
+   - Once the user confirms, use the `Shell` tool to commit the newly integrated content to the git repository.
+   - **MUST follow the Git standards defined in `.cursor/rules/git-standards.mdc`** (e.g., `feat(interviews): 新增...`).

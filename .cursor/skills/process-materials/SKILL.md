@@ -29,4 +29,6 @@ Use this skill when the user asks you to read, organize, or incorporate existing
 
 5. **Review and Commit:**
    - Review your changes for high cohesion (related topics stay together).
-   - Use the `Shell` tool to commit the newly organized pages to the git repository.
+   - **CRITICAL:** Before committing, you MUST present the proposed commit message to the user and ask for their confirmation.
+   - Once the user confirms, use the `Shell` tool to commit the newly organized pages to the git repository.
+   - **MUST follow the Git standards defined in `.cursor/rules/git-standards.mdc`** (e.g., `feat(knowledge): 录入...参考资料`).

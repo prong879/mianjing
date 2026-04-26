@@ -1,0 +1,42 @@
+---
+description: Git 提交规范与分支管理要求
+globs: *
+alwaysApply: true
+---
+
+# Git 规范 (Git Standards)
+
+在对知识库进行修改并提交代码时，请严格遵守以下 Git 规范。
+
+## 1. Commit Message 格式
+提交信息必须遵循 Conventional Commits 规范，格式如下：
+`<type>(<scope>): <subject>`
+
+### Type（必填）
+- `feat`: 新增内容、新增页面或新增知识点面经
+- `fix`: 修复错别字、格式错误、链接失效等问题
+- `docs`: 仅修改文档结构、更新 README 等
+- `style`: 调整排版、代码格式（不影响内容逻辑）
+- `refactor`: 重构（例如：合并重复内容、调整目录结构）
+- `chore`: 构建过程或辅助工具的变动（如更新 VitePress 配置、依赖等）
+
+### Scope（可选）
+用于说明 commit 影响的范围，如 `knowledge`, `interviews`, `sidebar`, `config`, `public` 等。
+
+### Subject（必填）
+简短描述本次提交的目的，**必须使用中文**，且结尾不加句号。
+
+**示例：**
+- ✅ `feat(interviews): 新增字节跳动产品经理一面面经`
+- ✅ `fix(knowledge): 修复 SQL 语法高亮错误`
+- ✅ `refactor(docs): 重构归档目录下的旧数据`
+- ❌ `update docs`
+- ❌ `added some interview questions`
+
+## 2. 提交粒度
+- 保持提交的原子性。将不同模块的修改（如新增面经和修改 VitePress 配置）分多次提交，或者在一个具有概括性的提交中说明清楚。
+- 每次完成一个独立任务（如录入一篇面经、整理一个知识点）后，应准备执行 commit。
+
+## 3. 提交确认 (User Confirmation)
+- **强制要求**：在执行任何 `git commit` 命令之前，**必须先向用户展示拟定的 commit message，并询问用户是否确认提交**。
+- 只有在用户明确回复同意（如“确认”、“ok”、“继续”等）后，才能使用 `Shell` 工具执行提交。
