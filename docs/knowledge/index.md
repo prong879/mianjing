@@ -25,6 +25,8 @@
 | 增长 / 经营 / 案例 | [增长与经营](/knowledge/04-business-product/business-analysis/growth-and-cases) |
 | 表达与综合 case | [案例与表达](/knowledge/04-business-product/business-analysis/communication-and-cases) |
 | 产品经理专项 | [B端电商达人产品实习](/knowledge/04-business-product/product-manager/b2b-ecommerce-creator-intern) |
+| 产品经理专项（FinTech） | [澎博财经：埋点 / 数据平台 / AI Agent](/knowledge/04-business-product/product-manager/pengbo-fintech-product-intern) |
+| 数据科学实习专项 | [数巅科技：数据科学实习生](/knowledge/04-business-product/business-analysis/shudian-datascience-intern) |
 | 数仓与数据产品 | [数据仓库](/knowledge/01-data-infrastructure/data-warehouse/overview) |
 
 ## 机器学习（通用）

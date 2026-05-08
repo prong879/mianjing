@@ -101,6 +101,7 @@ export default defineConfig({
               items: [
                 { text: '专业术语清单', link: '/knowledge/04-business-product/product-manager/terminology' },
                 { text: 'B端电商达人产品实习', link: '/knowledge/04-business-product/product-manager/b2b-ecommerce-creator-intern' },
+                { text: '澎博财经：埋点/数据平台/AI Agent', link: '/knowledge/04-business-product/product-manager/pengbo-fintech-product-intern' },
               ]
             },
             {
