@@ -24,6 +24,7 @@
 | 指标体系与方法论 | [业务分析](/knowledge/04-business-product/business-analysis/metrics-and-methods) |
 | 增长 / 经营 / 案例 | [增长与经营](/knowledge/04-business-product/business-analysis/growth-and-cases) |
 | 表达与综合 case | [案例与表达](/knowledge/04-business-product/business-analysis/communication-and-cases) |
+| 产品经理专项 | [B端电商达人产品实习](/knowledge/04-business-product/product-manager/b2b-ecommerce-creator-intern) |
 | 数仓与数据产品 | [数据仓库](/knowledge/01-data-infrastructure/data-warehouse/overview) |
 
 ## 机器学习（通用）
@@ -32,7 +33,8 @@
 
 ## AI Agent
 
-从 [工程基础](/knowledge/05-ai-ml/ai-agent/engineering-basics) 到 [学习路线](/knowledge/05-ai-ml/ai-agent/learning-path) 共 13 篇，侧边栏有完整列表。
+从 [工程基础](/knowledge/05-ai-ml/ai-agent/engineering-basics) 到 [学习路线](/knowledge/05-ai-ml/ai-agent/learning-path) 共 13 篇，侧边栏有完整列表。  
+与**多 Agent 编排 + 金融场景**结合的复述材料见：[项目复盘：多 Agent 交易决策](/knowledge/06-quant-finance/quant-strategy/project-multi-agent-trading-interview)。
 
 ## 量化研究
 
@@ -41,6 +43,7 @@
 - [编程与数据处理](/knowledge/06-quant-finance/quant-strategy/programming-and-data)
 - [因子与策略](/knowledge/06-quant-finance/quant-strategy/factors-and-strategy)
 - [回测与实盘](/knowledge/06-quant-finance/quant-strategy/backtest-and-live)
+- [项目链路复盘：ETF 监控](/knowledge/06-quant-finance/quant-strategy/project-etf-monitoring-interview) · [多 Agent 交易决策](/knowledge/06-quant-finance/quant-strategy/project-multi-agent-trading-interview)
 - [数学与统计](/knowledge/06-quant-finance/quant-basics/math-and-statistics)
 
 SQL / Python 通用深度内容以数据向页面为准，量化页侧重**截面、防未来函数、回测框架**等语境。

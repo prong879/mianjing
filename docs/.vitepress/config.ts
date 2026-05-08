@@ -100,6 +100,7 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: '专业术语清单', link: '/knowledge/04-business-product/product-manager/terminology' },
+                { text: 'B端电商达人产品实习', link: '/knowledge/04-business-product/product-manager/b2b-ecommerce-creator-intern' },
               ]
             },
             {
@@ -154,6 +155,7 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: '产品场景', link: '/knowledge/05-ai-ml/ai-agent/product-scenarios' },
+                { text: '项目复盘：多 Agent 交易决策', link: '/knowledge/06-quant-finance/quant-strategy/project-multi-agent-trading-interview' },
                 { text: '学习路线', link: '/knowledge/05-ai-ml/ai-agent/learning-path' },
               ]
             }
@@ -180,6 +182,8 @@ export default defineConfig({
                 { text: '因子与策略评价', link: '/knowledge/06-quant-finance/quant-strategy/factors-and-strategy' },
                 { text: '回测与实盘框架', link: '/knowledge/06-quant-finance/quant-strategy/backtest-and-live' },
                 { text: '机器学习（量化）', link: '/knowledge/06-quant-finance/quant-strategy/machine-learning' },
+                { text: '项目复盘：ETF 监控与面试要点', link: '/knowledge/06-quant-finance/quant-strategy/project-etf-monitoring-interview' },
+                { text: '项目复盘：多 Agent 交易决策', link: '/knowledge/06-quant-finance/quant-strategy/project-multi-agent-trading-interview' },
               ]
             }
           ],
