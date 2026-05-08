@@ -24,10 +24,8 @@
 | 指标体系与方法论 | [业务分析](/knowledge/04-business-product/business-analysis/metrics-and-methods) |
 | 增长 / 经营 / 案例 | [增长与经营](/knowledge/04-business-product/business-analysis/growth-and-cases) |
 | 表达与综合 case | [案例与表达](/knowledge/04-business-product/business-analysis/communication-and-cases) |
-| 产品经理专项 | [B端电商达人产品实习](/knowledge/04-business-product/product-manager/b2b-ecommerce-creator-intern) |
-| 产品经理专项（FinTech） | [澎博财经：埋点 / 数据平台 / AI Agent](/knowledge/04-business-product/product-manager/pengbo-fintech-product-intern) |
-| 数据实习专项（大宗商品） | [卓创资讯：大宗商品数据实习](/knowledge/04-business-product/product-manager/zhuochuang-commodity-data-intern) |
-| 数据科学实习专项 | [数巅科技：数据科学实习生](/knowledge/04-business-product/business-analysis/shudian-datascience-intern) |
+| 产品术语（通识） | [专业术语清单](/knowledge/04-business-product/product-manager/terminology) |
+| **具体岗位长篇面经** | 从 [面试题库](/interviews/) 侧栏进入：**数据科学实习**（数巅、卓创）· **产品经理岗**（电商达人、澎博）；正文在知识库同路径，仅导航归入面试框架 |
 | 数仓与数据产品 | [数据仓库](/knowledge/01-data-infrastructure/data-warehouse/overview) |
 
 ## 机器学习（通用）

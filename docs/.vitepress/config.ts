@@ -100,9 +100,6 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: '专业术语清单', link: '/knowledge/04-business-product/product-manager/terminology' },
-                { text: 'B端电商达人产品实习', link: '/knowledge/04-business-product/product-manager/b2b-ecommerce-creator-intern' },
-                { text: '澎博财经：埋点/数据平台/AI Agent', link: '/knowledge/04-business-product/product-manager/pengbo-fintech-product-intern' },
-                { text: '卓创资讯：大宗商品数据实习', link: '/knowledge/04-business-product/product-manager/zhuochuang-commodity-data-intern' },
               ]
             },
             {
@@ -215,6 +212,14 @@ export default defineConfig({
           ],
         },
         {
+          text: '数据科学实习 · 岗位面经',
+          collapsed: false,
+          items: [
+            { text: '数巅科技：数据科学实习生', link: '/knowledge/04-business-product/business-analysis/shudian-datascience-intern' },
+            { text: '卓创资讯：大宗商品数据实习', link: '/knowledge/04-business-product/business-analysis/zhuochuang-commodity-data-intern' },
+          ],
+        },
+        {
           text: 'AI Agent 岗面经',
           collapsed: false,
           items: [
@@ -234,8 +239,10 @@ export default defineConfig({
         },
         {
           text: '产品经理岗面经',
-          collapsed: true,
+          collapsed: false,
           items: [
+            { text: 'B端电商达人产品实习', link: '/knowledge/04-business-product/product-manager/b2b-ecommerce-creator-intern' },
+            { text: '澎博财经：埋点 / 数据平台 / AI Agent', link: '/knowledge/04-business-product/product-manager/pengbo-fintech-product-intern' },
             { text: '产品经理面试速记', link: '/interviews/04-product-manager/interview-transcript' },
             { text: '产品嗅觉与需求拆解', link: '/interviews/04-product-manager/product-sense' },
             { text: '策略与交互设计', link: '/interviews/04-product-manager/strategy-design' },
