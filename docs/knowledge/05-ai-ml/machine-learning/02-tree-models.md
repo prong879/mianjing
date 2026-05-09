@@ -237,3 +237,157 @@ lgb_pred = (lgb_prob > 0.5).astype(int)
 
 print(f"LightGBM 准确率: {accuracy_score(y_test, lgb_pred):.2f}")
 ```
+
+---
+
+## 5. 综合案例：大宗商品（铁矿石）库存预测 (LightGBM 实战)
+
+本案例改编自真实的量化数据分析面试题，涵盖了时间序列预测中特征工程、周期性处理、节假日处理、数据泄露防范以及模型训练的完整闭环。
+
+### 5.1 业务背景与难点
+在真实的大宗商品（如铁矿石）投研场景中，预测下一周的港口库存是核心任务。
+- **输入数据**：周度库存、周度进货量、周度出货量、日度价格指数。
+- **业务难点与面试考点**：
+  1. **非平稳性与目标变换**：树模型（LGBM）无法外推趋势。对于绝对量（库存增减），通常使用**一阶差分**；对于价格指数等具有指数增长或方差随水平放大的序列，通常使用**对数收益率（对数差分）**。
+  2. **复合周期性**：受开工旺季、天气影响，具有强烈的年内和月内周期性。除了提取月份、周序号等离散特征外，可通过**傅里叶变换**提取连续的周期特征，或使用 **STL/MSTL 分解**剥离季节项。
+  3. **节假日效应**：春节、端午等节假日不能简单做成稀疏的哑变量（样本太少易过拟合）。应抽象为连续的业务过程，如构建**“距离下一个/上一个重要节假日的周数”**，捕捉节前备货和节后恢复的渐进影响。
+  4. **时间序列切分与数据泄露**：严禁随机打乱数据。必须使用**简单时间截断（Hold-out）**或**滚动窗口交叉验证（Rolling Window CV）**。要严防“未来函数”（如错误的 `shift`、使用全样本计算 Z-score、使用事后修正的宏观终值数据）。
+
+### 5.2 核心特征工程
+树模型的上限由特征工程决定。借助 AI 编程工具，我们通常会批量生成大量候选特征，再通过 LGBM 的特征重要性进行筛选：
+- **基础时序特征**：进出货量和库存的滞后项（如滞后1周、4周、12周），以及滚动窗口（近4周、12周）下的均值、极值、波动率。滞后阶数 $n$ 可结合业务先验（月、季、年）和模型自动筛选（Feature Importance / RFE）来确定。
+- **业务交叉特征（核心）**：
+  - **净进货量**：`进货量 - 出货量`，反映库存变化的物理约束。
+  - **库存去化周期**：`当前库存 / 过去N周平均出货量`，反映当前库存压力。
+  - **进出货动量**：短期均线 / 长期均线，捕捉产业备货节奏的边际变化。
+- **价格与基本面的交叉特征**：
+  - **价格动量下的行为特征**：周度价格涨跌幅 $\times$ 进货量，捕捉“买涨不买跌”的投机性备货行为。
+
+### 5.3 可执行 Python 代码
+下面代码模拟了铁矿石库存预测的完整流程，包含模拟数据生成、特征构造、严格的时序切分和 LGBM 训练。
+
+```python
+import numpy as np
+import pandas as pd
+import lightgbm as lgb
+import matplotlib.pyplot as plt
+from sklearn.metrics import mean_absolute_error, mean_squared_error
+import warnings
+warnings.filterwarnings('ignore')
+
+# 1. 模拟生成铁矿石周度数据 (约3年, 156周)
+np.random.seed(42)
+n_weeks = 156
+dates = pd.date_range(start='2021-01-01', periods=n_weeks, freq='W')
+
+# 模拟基础数据：带有年内复合周期和噪声
+t = np.arange(n_weeks)
+# 进货量：基础量 + 年周期 + 半年周期 + 噪声
+inbound = 500 + 50 * np.sin(2 * np.pi * t / 52) + 20 * np.cos(2 * np.pi * t / 26) + np.random.normal(0, 20, n_weeks)
+# 出货量：基础量 + 年周期 + 噪声 (存在一定的时间差)
+outbound = 490 + 60 * np.sin(2 * np.pi * t / 52 - 0.5) + np.random.normal(0, 25, n_weeks)
+# 日度价格指数聚合为周度：随机游走带漂移
+price_index = 100 + np.cumsum(np.random.normal(0.1, 1.5, n_weeks))
+
+# 模拟库存 (库存 = 上期库存 + 进货 - 出货 + 损耗/噪声)
+inventory = np.zeros(n_weeks)
+inventory[0] = 5000
+for i in range(1, n_weeks):
+    inventory[i] = inventory[i-1] + inbound[i] - outbound[i] + np.random.normal(0, 5)
+
+df = pd.DataFrame({
+    'date': dates,
+    'inventory': inventory,
+    'inbound': inbound,
+    'outbound': outbound,
+    'price_index': price_index
+})
+df.set_index('date', inplace=True)
+
+# 2. 特征工程 (Feature Engineering)
+# 目标变量：预测下一周的库存变化量 (一阶差分，因为树模型难以外推库存绝对值的趋势)
+df['target_inv_change'] = df['inventory'].shift(-1) - df['inventory']
+
+# 2.1 业务交叉特征
+df['net_inbound'] = df['inbound'] - df['outbound'] # 净进货量
+df['depletion_cycle'] = df['inventory'] / (df['outbound'].rolling(window=4, min_periods=1).mean() + 1e-5) # 去化周期
+
+# 2.2 价格动量 (对数收益率，处理价格的非平稳性)
+df['price_return_1w'] = np.log(df['price_index'] / df['price_index'].shift(1))
+df['price_return_4w'] = np.log(df['price_index'] / df['price_index'].shift(4))
+
+# 价格动量与进货量的交叉 (买涨不买跌情绪)
+df['momentum_x_inbound'] = df['price_return_1w'] * df['inbound']
+
+# 2.3 滞后与滚动特征 (严格使用 shift 避免未来函数泄露)
+for col in ['inventory', 'inbound', 'outbound', 'net_inbound']:
+    # 滞后 1周(近期), 4周(月度), 12周(季度)
+    for lag in [1, 4, 12]:
+        df[f'{col}_lag{lag}'] = df[col].shift(lag)
+    # 滚动均值与波动率 (注意必须先 shift(1) 再 rolling，否则会泄露当周信息给当周特征)
+    df[f'{col}_roll_mean4'] = df[col].shift(1).rolling(window=4).mean()
+    df[f'{col}_roll_std4'] = df[col].shift(1).rolling(window=4).std()
+
+# 2.4 周期性与节假日特征
+df['month'] = df.index.month
+df['weekofyear'] = df.index.isocalendar().week.astype(int)
+
+# 模拟距离春节的周数 (假设每年第6周左右是春节)
+# 实际业务中应根据真实日历计算距离下一个/上一个法定长假的真实天数/周数
+df['weeks_to_spring_fest'] = (6 - df['weekofyear']) % 52
+df['weeks_to_spring_fest'] = df['weeks_to_spring_fest'].apply(lambda x: x if x <= 26 else 52 - x) # 转换为绝对距离
+
+# 剔除因构造滞后和目标变量产生的 NaN
+df.dropna(inplace=True)
+
+# 3. 时间序列切分 (Time Series Split)
+# 严禁随机打乱！按时间顺序前 80% 训练，后 20% 测试 (Hold-out)
+train_size = int(len(df) * 0.8)
+train_df = df.iloc[:train_size]
+test_df = df.iloc[train_size:]
+
+features = [c for c in df.columns if c not in ['target_inv_change']]
+X_train, y_train = train_df[features], train_df['target_inv_change']
+X_test, y_test = test_df[features], test_df['target_inv_change']
+
+# 4. LightGBM 模型训练
+# 声明类别特征
+categorical_features = ['month', 'weekofyear']
+
+lgb_train = lgb.Dataset(X_train, y_train, categorical_feature=categorical_features)
+lgb_eval = lgb.Dataset(X_test, y_test, reference=lgb_train, categorical_feature=categorical_features)
+
+params = {
+    'boosting_type': 'gbdt',
+    'objective': 'regression', # 回归任务
+    'metric': 'mae',           # 评估指标：平均绝对误差
+    'num_leaves': 15,
+    'learning_rate': 0.05,
+    'feature_fraction': 0.8,
+    'verbose': -1,
+    'random_state': 42
+}
+
+gbm = lgb.train(params,
+                lgb_train,
+                num_boost_round=300,
+                valid_sets=[lgb_train, lgb_eval],
+                callbacks=[lgb.early_stopping(stopping_rounds=30, verbose=False)])
+
+# 5. 模型预测与评估
+y_pred = gbm.predict(X_test, num_iteration=gbm.best_iteration)
+print(f"测试集 MAE (库存变化量): {mean_absolute_error(y_test, y_pred):.2f} 吨")
+print(f"测试集 RMSE (库存变化量): {np.sqrt(mean_squared_error(y_test, y_pred)):.2f} 吨")
+
+# 若要还原为绝对库存预测：
+# 预测库存 = 当前期真实库存 + 预测的库存变化量
+predicted_inventory = test_df['inventory'] + y_pred
+print(f"测试集绝对库存预测 MAPE: {np.mean(np.abs((test_df['inventory'].shift(-1) - predicted_inventory) / test_df['inventory'].shift(-1))):.4%}")
+
+# 6. 特征重要性可视化 (业务解释力)
+plt.figure(figsize=(10, 6))
+lgb.plot_importance(gbm, max_num_features=15, importance_type='gain', 
+                    title='LGBM Feature Importance (Gain)', figsize=(10, 6))
+plt.tight_layout()
+plt.show()
+```
