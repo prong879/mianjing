@@ -7,6 +7,8 @@ docs/.vitepress/dist/
 .env
 *.docx
 *.txt
+!binder/requirements.txt
+!binder/runtime.txt
 docs/knowledge/05-ai-ml/machine-learning/新建文件夹/screenshot_20260510_001241_yylx.jpg
 docs/knowledge/05-ai-ml/machine-learning/新建文件夹/screenshot_20260510_001307_yylx.jpg
 docs/knowledge/05-ai-ml/machine-learning/新建文件夹/screenshot_20260510_001320_yylx.jpg
