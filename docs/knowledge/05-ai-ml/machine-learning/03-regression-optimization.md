@@ -66,7 +66,7 @@
    - 引入多项式特征（做加法解决欠拟合）或正则化（Lasso/Ridge，做减法解决过拟合）。
 4. **交叉验证与调参**：使用 K折交叉验证确保评估的稳定性，并结合网格搜索（GridSearchCV）寻找最优的正则化惩罚系数（Alpha）。
 
-**核心伪代码/API 展示**（完整可执行代码见配套 Jupyter Notebook）：
+**核心伪代码/API 展示**（完整可执行代码见配套 Jupyter Notebook；**在线运行** → [Binder 打开 `03_regression_optimization.ipynb`](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/03_regression_optimization.ipynb)）：
 ```python
 from sklearn.linear_model import Ridge
 from sklearn.model_selection import cross_val_score, GridSearchCV

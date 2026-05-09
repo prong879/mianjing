@@ -80,7 +80,7 @@
   - 使用决策树（DecisionTreeClassifier）进行训练，并利用 `plot_tree` 将树状规则可视化，直观理解基尼系数的下降过程。
   - 对比使用 KNN 和 SVM（RBF核）在二维特征空间中绘制非线性决策边界。
 
-**核心伪代码/API 展示**（完整可执行代码见配套 Jupyter Notebook）：
+**核心伪代码/API 展示**（完整可执行代码见配套 Jupyter Notebook；**在线运行** → [Binder 打开 `04_classification_tree_models.ipynb`](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/04_classification_tree_models.ipynb)）：
 ```python
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, roc_auc_score

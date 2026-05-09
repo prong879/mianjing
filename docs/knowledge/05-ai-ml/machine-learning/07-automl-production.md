@@ -37,7 +37,7 @@
 3. **网格搜索调优 (GridSearchCV)**：不仅搜索随机森林的超参数（如树的深度），还可以直接搜索预处理步骤的参数（如测试均值填充和中位数填充哪个更好）。
 4. **安全预测**：在测试集上评估时，只需调用 `pipeline.predict(X_test)`，测试集会自动经过填充、标准化和独热编码，彻底杜绝数据泄露。
 
-**核心伪代码/API 展示**（完整可执行代码见配套 Jupyter Notebook）：
+**核心伪代码/API 展示**（完整可执行代码见配套 Jupyter Notebook；**在线运行** → [Binder 打开 `07_automl_production.ipynb`](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/07_automl_production.ipynb)）：
 ```python
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer

@@ -56,7 +56,7 @@
    - 使用 PCA 将 10 维特征降维到 2 维（提取前两个主成分）。
    - 将降维后的二维数据绘制成散点图，并用 K-Means 预测的群体标签进行着色，直观查看聚类效果。
 
-**核心伪代码/API 展示**（完整可执行代码见配套 Jupyter Notebook）：
+**核心伪代码/API 展示**（完整可执行代码见配套 Jupyter Notebook；**在线运行** → [Binder 打开 `06_unsupervised_learning.ipynb`](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/06_unsupervised_learning.ipynb)）：
 ```python
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA

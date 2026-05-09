@@ -139,5 +139,6 @@ flowchart TB
 
 ## 🎯 配套实战案例指引
 本知识库配套了完整的 Jupyter Notebook 代码实战。在学习完本模块的理论后，请打开对应的 Notebook 进行动手操作。
+- **在线运行（推荐）**：从 [模块 02 · 泰坦尼克数据预处理（Binder）](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/01_02_data_preparation.ipynb) 进入；其余案例见 [机器学习总览](./overview.md) 文中的「各案例 Binder 直达」与下方「Binder 在线运行」表格。
 - **实战目标**：熟悉机器学习的标准工作流程（定义问题 -> 数据清洗 -> 特征工程 -> 模型训练 -> 评估调优）。
 - **案例背景**：我们将以经典的**“泰坦尼克号生存预测”**或**“客户流失预测”**为例，带你走过从原始脏数据到可用模型的完整链路。

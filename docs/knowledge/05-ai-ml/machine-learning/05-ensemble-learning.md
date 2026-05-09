@@ -58,7 +58,7 @@ Boosting 模型族是传统机器学习在工业界和数据竞赛（如 Kaggle�
    - 价格动量：周度价格涨跌幅 $\times$ 进货量，捕捉“买涨不买跌”的投机性备货行为。
 4. **时间序列切分与防泄露**：严禁随机打乱数据！必须使用**简单时间截断（Hold-out）**或**滚动窗口交叉验证（Rolling Window CV）**。构造滚动特征时必须严格使用 `shift(1)` 避免未来函数泄露。
 
-**核心伪代码/API 展示**（完整可执行代码见配套 Jupyter Notebook）：
+**核心伪代码/API 展示**（完整可执行代码见配套 Jupyter Notebook；**在线运行** → [Binder 打开 `05_ensemble_learning.ipynb`](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/05_ensemble_learning.ipynb)）：
 ```python
 import lightgbm as lgb
 import pandas as pd

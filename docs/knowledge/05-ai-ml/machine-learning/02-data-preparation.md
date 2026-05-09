@@ -59,7 +59,7 @@
    - 数值特征（如 `Age`, `Fare`）：中位数填充缺失值 -> StandardScaler 标准化。
    - 类别特征（如 `Sex`, `Embarked`）：众数填充缺失值 -> OneHotEncoder 独热编码。
 
-**核心伪代码/API 展示**（完整可执行代码见配套 Jupyter Notebook）：
+**核心伪代码/API 展示**（完整可执行代码见配套 Jupyter Notebook；**在线运行** → [Binder 打开 `01_02_data_preparation.ipynb`](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/01_02_data_preparation.ipynb)）：
 ```python
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline

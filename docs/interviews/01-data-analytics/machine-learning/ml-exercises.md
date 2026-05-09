@@ -6,6 +6,8 @@ outline: deep
 
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
+**动手巩固**：系统化讲义与可运行 Notebook 见 [机器学习与数据挖掘基础（知识库总览）](/knowledge/05-ai-ml/machine-learning/overview)，各章「实战案例」下附 **Binder 在线打开** 链接（浏览器内 JupyterLab，无需本地环境）。
+
 ### 八、机器学习与数据挖掘习题
 
 - **聚类和分类有什么区别？**

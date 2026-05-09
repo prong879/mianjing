@@ -13,7 +13,7 @@ outline: deep
 
 ## 模块化讲义（主线学习路径）
 
-讲义按「从概念 → 数据 → 回归/优化 → 分类与树 → 集成 → 无监督 → 工程落地」组织；每篇末尾有 **配套 Jupyter Notebook** 实战指引（泰坦尼克预处理、加州房价、乳腺癌/鸢尾花、铁矿石库存 LightGBM、用户聚类与 PCA、电信流失端到端 Pipeline 等）。
+讲义按「从概念 → 数据 → 回归/优化 → 分类与树 → 集成 → 无监督 → 工程落地」组织；每篇末尾有 **配套 Jupyter Notebook** 实战指引（泰坦尼克预处理、加州房价、乳腺癌/鸢尾花、铁矿石库存 LightGBM、用户聚类与 PCA、电信流失端到端 Pipeline 等）。**各案例 Binder 直达**：[泰坦尼克·数据预处理](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/01_02_data_preparation.ipynb) · [加州房价·回归](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/03_regression_optimization.ipynb) · [乳腺癌/鸢尾花·分类](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/04_classification_tree_models.ipynb) · [铁矿石·LightGBM](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/05_ensemble_learning.ipynb) · [用户聚类·PCA](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/06_unsupervised_learning.ipynb) · [电信流失·Pipeline](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/07_automl_production.ipynb)。
 
 - [01 机器学习基石](./01-foundations.md) — AI / ML / DL 关系、工作流程、监督·无监督·强化·半监督、与深度学习衔接
 - [02 数据先行](./02-data-preparation.md) — EDA、划分与防泄露、清洗与编码、缩放、`Pipeline` / `ColumnTransformer`
