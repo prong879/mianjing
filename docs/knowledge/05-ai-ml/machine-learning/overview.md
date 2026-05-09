@@ -23,6 +23,19 @@ outline: deep
 - [06 无监督学习](./06-unsupervised-learning.md) — K-Means（肘部法则、轮廓系数）、PCA 与方差贡献率
 - [07 AutoML 与生产](./07-automl-production.md) — 自动化 EDA、AutoML、Optuna、实验追踪、数据质量与不平衡、端到端流水线
 
+### Binder 在线运行（网页打开 JupyterLab）
+
+配套 Notebook 已纳入本仓库 `notebooks/machine-learning/`（与本地 `学习/机器学习/` 讲义同步维护），由 [MyBinder](https://mybinder.org/) 拉起临时环境，**无需本地安装**即可运行；冷启动约 1–3 分钟，实例不持久。**合并本分支后**若默认分支不是 `main`，请把下列链接里的 `main` 改成当前默认分支名。设计与维护说明见仓库根目录 [BINDER.md](https://github.com/prong879/mianjing/blob/main/BINDER.md)。
+
+| 模块 | Notebook | 在 Binder 中打开 |
+|------|----------|------------------|
+| 02 数据先行 | `01_02_data_preparation.ipynb` | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/01_02_data_preparation.ipynb) |
+| 03 回归与优化 | `03_regression_optimization.ipynb` | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/03_regression_optimization.ipynb) |
+| 04 分类与树模型 | `04_classification_tree_models.ipynb` | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/04_classification_tree_models.ipynb) |
+| 05 集成学习 | `05_ensemble_learning.ipynb` | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/05_ensemble_learning.ipynb) |
+| 06 无监督学习 | `06_unsupervised_learning.ipynb` | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/06_unsupervised_learning.ipynb) |
+| 07 AutoML 与生产 | `07_automl_production.ipynb` | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/07_automl_production.ipynb) |
+
 下面 **「八、机器学习与数据挖掘基础」** 起为面试向速记与补充（可与上文模块交叉对照）。
 
 ---

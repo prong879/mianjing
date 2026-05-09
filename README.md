@@ -24,6 +24,8 @@ npm run docs:preview
 | `docs/guide/` | 使用说明、学习路线、考前冲刺 |
 | `docs/knowledge/` | 遵循严格 **6大支柱** 的理论与知识页（如 `01-data-infrastructure/`） |
 | `docs/interviews/` | 遵循严格 **4大岗位** 的面试题库（如 `01-data-analytics/`） |
+| `notebooks/machine-learning/` | 与机器学习模块配套的 Jupyter Notebook（[Binder 说明](./BINDER.md)） |
+| `binder/` | MyBinder 构建用依赖（`requirements.txt`、`runtime.txt`） |
 | `.cursor/rules/` | Cursor AI 编辑、排版与 Git 提交规范（确保内容高内聚、低耦合） |
 | `.cursor/skills/` | AI Agent 技能配置（用于自动化处理外部学习资料和零散面经） |
 

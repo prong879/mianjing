@@ -1,5 +1,7 @@
 # 模块二：数据先行 (Data Preparation)
 
+> **Binder 实战**：[在浏览器中打开配套 Notebook](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/01_02_data_preparation.ipynb) · 首次启动约 1–3 分钟
+
 *“Garbage in, garbage out”，在引入算法前，必须先讲探索性分析和数据预处理，这是工业界最耗时的部分。*
 
 ## 3. 探索性数据分析 (EDA)

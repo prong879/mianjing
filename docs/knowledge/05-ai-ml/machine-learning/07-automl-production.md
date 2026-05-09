@@ -1,5 +1,7 @@
 # 模块七：工业化机器学习工程 (AutoML & Production)
 
+> **Binder 实战**：[打开配套 Notebook](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/07_automl_production.ipynb) · 首次启动约 1–3 分钟
+
 *结课总结：在真实的竞赛和企业生产中，除了调包，我们还需要高效的工具链。*
 
 ## 15. 自动化探索与 AutoML 工具链

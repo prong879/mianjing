@@ -1,5 +1,7 @@
 # 模块六：无监督学习 (Unsupervised Learning)
 
+> **Binder 实战**：[打开配套 Notebook](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/06_unsupervised_learning.ipynb) · 首次启动约 1–3 分钟
+
 *跳出标签的限制，讲解如何发现数据的内在结构。*
 
 ## 13. K-Means 聚类 (Clustering)

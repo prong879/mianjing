@@ -1,5 +1,7 @@
 # 模块五：进阶与霸榜模型 (Ensemble Learning)
 
+> **Binder 实战**：[打开配套 Notebook](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/05_ensemble_learning.ipynb) · 首次启动约 1–3 分钟
+
 *介绍工业界和 Kaggle 竞赛中最常用的“大杀器”——集成学习。*
 
 ## 11. 集成学习与随机森林 (Random Forest)

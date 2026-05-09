@@ -1,5 +1,7 @@
 # 模块三：回归问题与模型优化基础 (Regression & Optimization)
 
+> **Binder 实战**：[打开配套 Notebook](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/03_regression_optimization.ipynb) · 首次启动约 1–3 分钟
+
 *从最简单的线性模型入手，顺理成章地引出机器学习最重要的优化算法和评估概念。*
 
 ## 5. 线性回归 (Linear Regression)

@@ -1,5 +1,7 @@
 # 模块四：分类问题与树模型 (Classification & Tree Models)
 
+> **Binder 实战**：[打开配套 Notebook](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/04_classification_tree_models.ipynb) · 首次启动约 1–3 分钟
+
 *从回归过渡到分类，再从线性模型跨越到非线性（树）模型。*
 
 ## 8. 逻辑回归 (Logistic Regression)
