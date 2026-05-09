@@ -11,6 +11,20 @@ outline: deep
 
 - 因子 / 表格数据语境下的树模型与时序：[机器学习（量化）](/knowledge/06-quant-finance/quant-strategy/machine-learning)
 
+## 机器学习算法详解 (含 Python 代码实现)
+
+为了更好地准备面试并掌握各个模型的原理与代码实现，我们提供了以下详细的算法讲解与可执行的 Python 模拟数据代码：
+
+- [01. 线性模型 (Linear Models)](./01-linear-models.md) - 线性回归、逻辑回归
+- [02. 树模型与集成学习 (Tree Models & Ensemble Learning)](./02-tree-models.md) - 决策树、随机森林、XGBoost、LightGBM、CatBoost
+- [03. 距离与概率模型 (Distance & Probabilistic Models)](./03-distance-models.md) - KNN、SVM、朴素贝叶斯
+- [04. 无监督学习 (Unsupervised Learning)](./04-unsupervised-learning.md) - K-Means、PCA
+- [05. 特征工程与数据预处理 (Feature Engineering)](./05-feature-engineering.md) - 缺失值处理、类别编码、特征缩放
+- [06. 模型评估与超参数调优 (Evaluation & Tuning)](./06-model-evaluation-tuning.md) - 交叉验证、网格搜索、ROC/AUC、类别不平衡
+- [07. 端到端机器学习流水线 (End-to-End Pipeline)](./07-end-to-end-pipeline.md) - 综合实战：Pipeline 与 ColumnTransformer
+
+---
+
 ### 八、机器学习与数据挖掘基础
 
 并不是所有数据分析岗都深考机器学习，但很多岗位会考基础认知，尤其是校招、笔试和偏算法分析的岗位。

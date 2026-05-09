@@ -1,6 +1,6 @@
 # 面试题库总览
 
-题目与面经按**岗位方向**归类，适合考前集中刷；**系统学习**请配合 [知识库](/knowledge/)。**具体公司的长篇岗位备考**（数巅、卓创、电商达人、澎博）的正文仍在知识库路径下，本站从本页与侧栏**按数据科学 / 产品经理实习**归类入口，便于与通用面试题一起查找。
+题目与面经按**岗位方向**归类，适合考前集中刷；**系统学习**请配合 [知识库](/knowledge/)。**具体公司的长篇岗位备考**（数巅、卓创、电商达人、澎博）已直接归类在各岗位的题库目录中，便于与通用面试题一起查找。
 
 ## 数据分析 / 商业分析 / 数据科学
 
@@ -19,12 +19,12 @@
 - [数仓与数据产品习题](/interviews/01-data-analytics/business-warehouse/warehouse-exercises)
 - [综合案例题](/interviews/01-data-analytics/machine-learning/case-exercises)
 
-### 数据科学实习 · 岗位面经（长篇备考，内容在知识库路径下）
+### 数据科学实习 · 岗位面经（长篇备考）
 
 与通用习题互补，按具体 JD 整理：
 
-- [数巅科技：数据科学实习生](/knowledge/04-business-product/business-analysis/shudian-datascience-intern)
-- [卓创资讯：大宗商品数据实习](/knowledge/04-business-product/business-analysis/zhuochuang-commodity-data-intern)
+- [数巅科技：数据科学实习生](/interviews/01-data-analytics/business-analysis/shudian-datascience-intern)
+- [卓创资讯：大宗商品数据实习](/interviews/01-data-analytics/business-analysis/zhuochuang-commodity-data-intern)
 
 ## AI Agent
 
@@ -40,10 +40,10 @@
 
 ## 产品经理
 
-### 产品经理实习 · 岗位面经（长篇备考，内容在知识库路径下）
+### 产品经理实习 · 岗位面经（长篇备考）
 
-- [B端电商达人产品实习](/knowledge/04-business-product/product-manager/b2b-ecommerce-creator-intern)
-- [澎博财经：埋点 / 数据平台 / AI Agent](/knowledge/04-business-product/product-manager/pengbo-fintech-product-intern)
+- [B端电商达人产品实习](/interviews/04-product-manager/b2b-ecommerce-creator-intern)
+- [澎博财经：埋点 / 数据平台 / AI Agent](/interviews/04-product-manager/pengbo-fintech-product-intern)
 
 ### 通用产品与策略题
 
