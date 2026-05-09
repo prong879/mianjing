@@ -5,3 +5,5 @@ docs/.vitepress/dist/
 学习、参考资料/
 .DS_Store
 .env
+*.docx
+*.txt
