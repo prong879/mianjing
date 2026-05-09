@@ -11,17 +11,19 @@ outline: deep
 
 - 因子 / 表格数据语境下的树模型与时序：[机器学习（量化）](/knowledge/06-quant-finance/quant-strategy/machine-learning)
 
-## 机器学习算法详解 (含 Python 代码实现)
+## 模块化讲义（主线学习路径）
 
-为了更好地准备面试并掌握各个模型的原理与代码实现，我们提供了以下详细的算法讲解与可执行的 Python 模拟数据代码：
+讲义按「从概念 → 数据 → 回归/优化 → 分类与树 → 集成 → 无监督 → 工程落地」组织；每篇末尾有 **配套 Jupyter Notebook** 实战指引（泰坦尼克预处理、加州房价、乳腺癌/鸢尾花、铁矿石库存 LightGBM、用户聚类与 PCA、电信流失端到端 Pipeline 等）。
 
-- [01. 线性模型 (Linear Models)](./01-linear-models.md) - 线性回归、逻辑回归
-- [02. 树模型与集成学习 (Tree Models & Ensemble Learning)](./02-tree-models.md) - 决策树、随机森林、XGBoost、LightGBM、CatBoost
-- [03. 距离与概率模型 (Distance & Probabilistic Models)](./03-distance-models.md) - KNN、SVM、朴素贝叶斯
-- [04. 无监督学习 (Unsupervised Learning)](./04-unsupervised-learning.md) - K-Means、PCA
-- [05. 特征工程与数据预处理 (Feature Engineering)](./05-feature-engineering.md) - 缺失值处理、类别编码、特征缩放
-- [06. 模型评估与超参数调优 (Evaluation & Tuning)](./06-model-evaluation-tuning.md) - 交叉验证、网格搜索、ROC/AUC、类别不平衡
-- [07. 端到端机器学习流水线 (End-to-End Pipeline)](./07-end-to-end-pipeline.md) - 综合实战：Pipeline 与 ColumnTransformer
+- [01 机器学习基石](./01-foundations.md) — AI / ML / DL 关系、工作流程、监督·无监督·强化·半监督、与深度学习衔接
+- [02 数据先行](./02-data-preparation.md) — EDA、划分与防泄露、清洗与编码、缩放、`Pipeline` / `ColumnTransformer`
+- [03 回归与优化基础](./03-regression-optimization.md) — 线性回归、梯度下降、回归评估与诊断、`Ridge`/交叉验证/网格搜索、欠拟合与过拟合
+- [04 分类与树模型](./04-classification-tree-models.md) — 逻辑回归、分类指标与 ROC/AUC、决策树、KNN / SVM / 朴素贝叶斯
+- [05 集成学习](./05-ensemble-learning.md) — Bagging 与随机森林、Boosting、XGBoost / LightGBM / CatBoost 与选型
+- [06 无监督学习](./06-unsupervised-learning.md) — K-Means（肘部法则、轮廓系数）、PCA 与方差贡献率
+- [07 AutoML 与生产](./07-automl-production.md) — 自动化 EDA、AutoML、Optuna、实验追踪、数据质量与不平衡、端到端流水线
+
+下面 **「八、机器学习与数据挖掘基础」** 起为面试向速记与补充（可与上文模块交叉对照）。
 
 ---
 

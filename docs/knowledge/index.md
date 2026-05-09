@@ -30,7 +30,7 @@
 
 ## 机器学习（通用）
 
-- [机器学习基础](/knowledge/05-ai-ml/machine-learning/overview) — 与 [量化侧 ML 笔记](/knowledge/06-quant-finance/quant-strategy/machine-learning) 可对照阅读（表述角度不同）。
+- [机器学习基础总览](/knowledge/05-ai-ml/machine-learning/overview) — 七篇模块化讲义（基石 → 数据 → 回归与优化 → 分类与树 → 集成 → 无监督 → AutoML/生产）+ 面试速记；与 [量化侧 ML 笔记](/knowledge/06-quant-finance/quant-strategy/machine-learning) 可对照阅读（表述角度不同）。
 
 ## AI Agent
 
