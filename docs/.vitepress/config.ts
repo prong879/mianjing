@@ -9,6 +9,10 @@ export default defineConfig({
   srcDir: '.',
   lastUpdated: true,
 
+  markdown: {
+    math: true
+  },
+
   themeConfig: {
     search: {
       provider: 'local',
@@ -113,8 +117,17 @@ export default defineConfig({
         },
         {
           text: '机器学习',
-          collapsed: true,
-          items: [{ text: '机器学习基础（通用）', link: '/knowledge/05-ai-ml/machine-learning/overview' }],
+          collapsed: false,
+          items: [
+            { text: '知识总览', link: '/knowledge/05-ai-ml/machine-learning/overview' },
+            { text: '01 线性模型', link: '/knowledge/05-ai-ml/machine-learning/01-linear-models' },
+            { text: '02 树模型与集成学习', link: '/knowledge/05-ai-ml/machine-learning/02-tree-models' },
+            { text: '03 距离与概率模型', link: '/knowledge/05-ai-ml/machine-learning/03-distance-models' },
+            { text: '04 无监督学习', link: '/knowledge/05-ai-ml/machine-learning/04-unsupervised-learning' },
+            { text: '05 特征工程', link: '/knowledge/05-ai-ml/machine-learning/05-feature-engineering' },
+            { text: '06 模型评估与调优', link: '/knowledge/05-ai-ml/machine-learning/06-model-evaluation-tuning' },
+            { text: '07 端到端流水线', link: '/knowledge/05-ai-ml/machine-learning/07-end-to-end-pipeline' },
+          ],
         },
         {
           text: 'AI Agent',

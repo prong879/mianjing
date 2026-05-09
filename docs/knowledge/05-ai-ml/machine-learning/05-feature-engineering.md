@@ -42,14 +42,15 @@ print("\n")
 
 # 2. 连续型特征填充 (Age 用中位数, Salary 用均值)
 age_imputer = SimpleImputer(strategy='median')
-df['Age_filled'] = age_imputer.fit_transform(df[['Age']])
+df['Age_filled'] = age_imputer.fit_transform(df[['Age']]).ravel()
 
 salary_imputer = SimpleImputer(strategy='mean')
-df['Salary_filled'] = salary_imputer.fit_transform(df[['Salary']])
+df['Salary_filled'] = salary_imputer.fit_transform(df[['Salary']]).ravel()
 
 # 3. 类别型特征填充 (City 用众数)
 city_imputer = SimpleImputer(strategy='most_frequent')
-df['City_filled'] = city_imputer.fit_transform(df[['City']])
+# Pandas 3.x：含字符串列时避免将 2D ndarray 直接赋给单列，使用 ravel()
+df['City_filled'] = city_imputer.fit_transform(df[['City']]).ravel()
 
 print("--- 填充后的数据 ---")
 print(df[['Age_filled', 'Salary_filled', 'City_filled']])

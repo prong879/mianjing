@@ -140,6 +140,7 @@ GBDT（Gradient Boosting Decision Tree）是基于 **Boosting（提升法）** �
 
 ```python
 # 需要先安装 xgboost: pip install xgboost
+import matplotlib.pyplot as plt
 import xgboost as xgb
 from sklearn.metrics import accuracy_score
 
