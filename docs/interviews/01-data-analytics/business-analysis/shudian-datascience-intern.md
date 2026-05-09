@@ -923,7 +923,7 @@ tags:
 
 **我回答时的陷阱或不足：** Langfuse 未用需 **直说 + 替代方案**；「WiFi」疑似听错，勿答成「结果真实性」偏题，应拉回 **trace/评测/回归**。
 
-**标准回答：** NumPy/Pandas 常用；Langfuse 了解但团队用 **日志 + 自建监控**；强调 **Agent 输出留痕、回归集、人工复核**，与数巅 **数据结论可信** 一致。若面试官扩展到 **LangChain / LangGraph / Deep Agents** 及「**过去业务 vs 现业务举例**」，可按 [卓创资讯实习篇 · 问题38](/knowledge/04-business-product/business-analysis/zhuochuang-commodity-data-intern) 的结构化答法改写（大宗商品 + 数智中心语境）。
+**标准回答：** NumPy/Pandas 常用；Langfuse 了解但团队用 **日志 + 自建监控**；强调 **Agent 输出留痕、回归集、人工复核**，与数巅 **数据结论可信** 一致。若面试官扩展到 **LangChain / LangGraph / Deep Agents** 及「**过去业务 vs 现业务举例**」，可按 [卓创资讯实习篇 · 问题38](/interviews/01-data-analytics/business-analysis/zhuochuang-commodity-data-intern) 的结构化答法改写（大宗商品 + 数智中心语境）。
 
 ### 13. Cursor、Code Agent 相关：介绍一下 Skills
 

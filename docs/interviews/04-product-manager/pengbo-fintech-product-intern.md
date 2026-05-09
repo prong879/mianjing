@@ -288,7 +288,7 @@ tags:
 
 ## 四、查漏补缺：同业面经迁移（电商达人 → 澎博语境）
 
-> 本节题库梳理自 [B端产品实习：电商达人方向](/knowledge/04-business-product/product-manager/b2b-ecommerce-creator-intern)（含快手达人 B 端面经与 JD 方法论）。澎博 JD 侧重 **期货行业 + 埋点/数据平台 + AI Agent**，下列条目已将 **电商达人 / 小二 / GMV** 等语境 **翻译成财经 B 端**，并与第三节 21 题 **错开补充**（偏 **调研颗粒度、指标体系答法、AI 评估与灰度、一线用户理解**）。  
+> 本节题库梳理自 [B端产品实习：电商达人方向](/interviews/04-product-manager/b2b-ecommerce-creator-intern)（含快手达人 B 端面经与 JD 方法论）。澎博 JD 侧重 **期货行业 + 埋点/数据平台 + AI Agent**，下列条目已将 **电商达人 / 小二 / GMV** 等语境 **翻译成财经 B 端**，并与第三节 21 题 **错开补充**（偏 **调研颗粒度、指标体系答法、AI 评估与灰度、一线用户理解**）。  
 > **结构**：**问题** → **可能的陷阱和回答缺点** → **参考回答**
 
 ### 1. 你为什么从（量化/研究）转向互联网或金融科技里的「产品经理」路径？
@@ -462,4 +462,4 @@ tags:
 
 ---
 
-*文档路径：`docs/knowledge/04-business-product/product-manager/pengbo-fintech-product-intern.md`* · 同业题库对照：[B端产品实习：电商达人方向](/knowledge/04-business-product/product-manager/b2b-ecommerce-creator-intern)
+*文档路径：`docs/interviews/04-product-manager/pengbo-fintech-product-intern.md`* · 同业题库对照：[B端产品实习：电商达人方向](/interviews/04-product-manager/b2b-ecommerce-creator-intern)
