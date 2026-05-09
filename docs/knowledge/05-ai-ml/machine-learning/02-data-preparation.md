@@ -19,7 +19,8 @@
 - **缺失值处理**：
   - 缺失率极高（如>70%）：直接删除该特征列。
   - 缺失率极低且随机：可直接删除对应的样本行。
-  - 常见填充方法：数值型特征通常使用**中位数**（对极值不敏感）填充；类别型特征使用**众数**填充，或单独设立一个 `unknown` 类别以保留业务信息。
+  - **常见填充方法**：数值型特征通常使用**中位数**（对极值不敏感，适合长尾分布）填充；类别型特征使用**众数**填充，或单独设立一个 `unknown` 类别以保留业务信息。
+  - **高级填充**：使用 KNN 算法寻找相似样本进行填充，或使用随机森林预测缺失值。
 - **异常值检测与截断**：
   - 可通过象限图或箱线图识别偏离群体的极端值。
   - 处理方法：利用 IQR（四分位距）设定合理区间（如 `[Q1 - 1.5*IQR, Q3 + 1.5*IQR]`），将超出该范围的极值截断（Clip）到边界值，而不是简单粗暴地删除。对于严重右偏的数据，也可使用对数变换（Log Transform）使其趋近正态分布。
@@ -28,6 +29,8 @@
 由于不同特征的量纲差异巨大（如房价是百万级，房间数是个位数），不缩放会导致模型赋予大数值特征过高的权重，造成梯度下降收敛缓慢甚至震荡。
 - **标准化 (StandardScaler)**：将数据转化为均值为0、标准差为1的分布。它不强制压缩到特定区间，受异常值影响相对较小，是线性模型和逻辑回归最常用的缩放方法。
 - **归一化 (MinMaxScaler)**：将数据线性映射到固定区间（通常为 `[0, 1]`）。它严格限定了范围，但受异常值影响极大，常用于图像处理（像素值天然在0-255）或神经网络输入。
+
+> **面试常考/避坑指南**：树模型（决策树、随机森林、XGBoost等）**不需要**进行特征缩放。因为树模型是基于特征的相对大小（排序）来寻找分裂点的，数值的绝对大小不影响分裂结果。
 
 ### 特征编码选型
 机器学习模型只能处理数值，因此需要将文本类别的特征映射为数值。
@@ -40,4 +43,44 @@
 - **特征删除**：去除对预测毫无帮助的冗余特征或纯噪声列，降低模型学习难度。
 
 ### 工业实践：Pipeline 与 ColumnTransformer
-数据预处理步骤繁琐且容易发生数据泄露。在工业实践中，强烈建议使用 Scikit-Learn 的 `Pipeline`（流水线）和 `ColumnTransformer`。它们能将缺失值填充、编码、缩放等步骤串联封装，确保 `fit` 和 `transform` 严格按照规范执行，避免忙中出错。
+数据预处理步骤繁琐且容易发生数据泄露。在工业实践中，强烈建议使用 Scikit-Learn 的 `Pipeline`（流水线）和 `ColumnTransformer`。它们能将缺失值填充、编码、缩放等步骤串联封装，确保 `fit` 和 `transform` 严格按照规范执行，避免忙中出错。此外，Pipeline 不仅能确保交叉验证时不会发生数据泄露，还能结合网格搜索（Grid Search）对预处理参数和模型超参数进行统一调优。
+
+---
+
+## 🎯 实战案例：泰坦尼克号生存预测 (数据预处理篇)
+**案例背景**：给定泰坦尼克号乘客的个人信息（年龄、性别、舱位、票价等），预测其是否幸存。原始数据包含大量缺失值和文本类别，是学习数据预处理的绝佳素材。
+
+**核心操作步骤**：
+1. **EDA (探索性数据分析)**：观察发现 `Age` 有 20% 缺失，`Cabin` 缺失严重，`Fare` 存在极度右偏。
+2. **数据划分**：使用 `train_test_split` 划分训练集和测试集。
+3. **构建预处理流水线**：
+   - 数值特征（如 `Age`, `Fare`）：中位数填充缺失值 -> StandardScaler 标准化。
+   - 类别特征（如 `Sex`, `Embarked`）：众数填充缺失值 -> OneHotEncoder 独热编码。
+
+**核心伪代码/API 展示**（完整可执行代码见配套 Jupyter Notebook）：
+```python
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+
+# 1. 定义数值流和类别流
+num_pipeline = Pipeline([
+    ('imputer', SimpleImputer(strategy='median')),
+    ('scaler', StandardScaler())
+])
+cat_pipeline = Pipeline([
+    ('imputer', SimpleImputer(strategy='most_frequent')),
+    ('onehot', OneHotEncoder(handle_unknown='ignore'))
+])
+
+# 2. 组合为 ColumnTransformer
+preprocessor = ColumnTransformer([
+    ('num', num_pipeline, ['Age', 'Fare']),
+    ('cat', cat_pipeline, ['Sex', 'Embarked'])
+])
+
+# 3. 预处理训练集 (fit_transform) 和测试集 (transform)
+X_train_processed = preprocessor.fit_transform(X_train)
+X_test_processed = preprocessor.transform(X_test)
+```

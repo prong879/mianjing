@@ -27,11 +27,13 @@ Boosting 模型族是传统机器学习在工业界和数据竞赛（如 Kaggle�
   极致梯度提升树，Boosting 家族的里程碑。
   - **二阶导数泰勒展开**：不仅利用了一阶梯度，还引入了二阶导数（海森矩阵），使得优化路径更精准、收敛更快。
   - **强大的正则化**：在目标函数中显式加入了对叶子节点数量和权重的正则项，极大地抑制了过拟合。
+  - **工程优化**：支持列抽样（防过拟合）、缺失值自动处理、特征分裂并行化计算。
   - **早停机制 (Early Stopping)**：在验证集误差不再下降时自动停止训练，节省算力并防过拟合。
 - **LightGBM (Light Gradient Boosting Machine)**
   微软开源的轻量级梯度提升框架，专为大规模数据和高效率而生。
   - **直方图加速**：将连续特征离散化为直方图的 Bin，极大地降低了内存消耗并加速了分裂点的寻找。
   - **Leaf-wise 生长策略**：不同于传统树的按层生长（Level-wise），它每次只挑选增益最大的那个叶子节点进行分裂，精度更高，但需配合深度限制防止过拟合。
+  - **GOSS 与 EFB**：GOSS (单边梯度采样) 减少了样本量，EFB (互斥特征捆绑) 减少了特征数，进一步极致加速训练。
 - **CatBoost (Categorical Boosting)**
   俄罗斯 Yandex 开源的神器，顾名思义，它是处理**类别型特征（Categorical Features）**的王者。
   - **原生支持分类特征**：无需繁琐的独热编码（One-Hot），内部自动进行高效的统计编码转换。
@@ -41,3 +43,44 @@ Boosting 模型族是传统机器学习在工业界和数据竞赛（如 Kaggle�
   - 数据量适中、追求极致精度、不怕调参麻烦：首选 **XGBoost**。
   - 数据量极大（百万级以上）、特征极多、追求训练速度和内存效率：首选 **LightGBM**。
   - 数据集中包含大量类别型特征（文本标签），不想做复杂的特征编码，追求开箱即用：首选 **CatBoost**。
+
+## 🎯 实战案例：大宗商品（铁矿石）库存预测 (LightGBM 实战)
+**案例背景**：在真实的量化投研场景中，预测下一周的港口库存是核心任务。这个案例涵盖了时间序列预测中特征工程、周期性处理、数据泄露防范的完整闭环。
+
+**核心操作步骤**：
+1. **目标变换**：树模型（如 LGBM）无法外推趋势。对于绝对量（库存增减），通常预测**一阶差分**；对于价格指数等具有指数增长的序列，通常使用**对数收益率（对数差分）**。
+2. **复合周期性与节假日效应**：受开工旺季、天气影响，具有强烈的年内和月内周期性。节假日不能简单做成稀疏的哑变量，应抽象为连续的业务过程，如构建“距离下一个法定长假的周数”，捕捉节前备货和节后恢复的渐进影响。
+3. **构造时序交叉特征**：
+   - 基础滞后项：进出货量和库存的滞后1周、4周，以及滚动窗口下的均值、波动率。
+   - 业务交叉特征：净进货量（进货量 - 出货量）、库存去化周期（当前库存 / 过去N周平均出货量）。
+   - 价格动量：周度价格涨跌幅 $\times$ 进货量，捕捉“买涨不买跌”的投机性备货行为。
+4. **时间序列切分与防泄露**：严禁随机打乱数据！必须使用**简单时间截断（Hold-out）**或**滚动窗口交叉验证（Rolling Window CV）**。构造滚动特征时必须严格使用 `shift(1)` 避免未来函数泄露。
+
+**核心伪代码/API 展示**（完整可执行代码见配套 Jupyter Notebook）：
+```python
+import lightgbm as lgb
+import pandas as pd
+
+# 1. 构造特征 (注意使用 shift 避免未来函数泄露)
+df['target_inv_change'] = df['inventory'].shift(-1) - df['inventory']
+df['net_inbound'] = df['inbound'] - df['outbound']
+df['inventory_roll_mean4'] = df['inventory'].shift(1).rolling(window=4).mean()
+
+# 2. 严格按时间切分训练集和测试集
+train_size = int(len(df) * 0.8)
+train_df, test_df = df.iloc[:train_size], df.iloc[train_size:]
+
+# 3. 构建 LightGBM 数据集并声明类别特征
+categorical_features = ['month', 'weekofyear']
+lgb_train = lgb.Dataset(X_train, y_train, categorical_feature=categorical_features)
+lgb_eval = lgb.Dataset(X_test, y_test, reference=lgb_train)
+
+# 4. 训练模型并使用早停机制 (Early Stopping)
+params = {'boosting_type': 'gbdt', 'objective': 'regression', 'metric': 'mae', 'learning_rate': 0.05}
+gbm = lgb.train(params, lgb_train, num_boost_round=300, 
+                valid_sets=[lgb_train, lgb_eval], 
+                callbacks=[lgb.early_stopping(stopping_rounds=30)])
+
+# 5. 特征重要性可视化
+lgb.plot_importance(gbm, max_num_features=10, importance_type='gain')
+```
