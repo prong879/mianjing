@@ -1,8 +1,9 @@
 ---
-title: "Agent 框架与开发生态"
+title: Agent 框架考点与 OpenClaw 实战
+date: 2026-04-26 19:44:08
+description: 面试速记：LangChain/LangGraph、LlamaIndex、AutoGen/CrewAI、低代码平台（Dify/Coze 等）、本地推理（Ollama/vLLM）与 MCP 协议选型思路；正文长篇为 OpenClaw 介绍、安装部署与进阶实战。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 ### 七、Agent 框架与开发生态

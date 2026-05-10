@@ -1,3 +1,8 @@
+---
+title: 模块二：数据先行 (Data Preparation)
+date: 2026-05-10 02:32:03
+description: EDA 与分布/相关性；先划分再预处理以防泄露；缺失与异常、缩放与类别编码；Pipeline / ColumnTransformer 工业实践；配套泰坦尼克 Notebook（Binder 可在线跑）。
+---
 # 模块二：数据先行 (Data Preparation)
 
 > **Binder 实战**：[在浏览器中打开配套 Notebook](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/01_02_data_preparation.ipynb) · 首次启动约 1–3 分钟

@@ -1,8 +1,9 @@
 ---
-title: "Excel 与 BI 工具习题"
+title: 四、Excel 与 BI 工具习题
+date: 2026-04-26 18:12:01
+description: Excel 与 BI 工具面试习题：Excel、Power BI、Tableau、Dash 等的选型、典型用法及与 Python 分析链路衔接，附参考答法。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 ### 四、Excel 与 BI 工具习题

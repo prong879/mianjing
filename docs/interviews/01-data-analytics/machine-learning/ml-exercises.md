@@ -1,9 +1,9 @@
 ---
-title: "机器学习与数据挖掘习题"
+title: 八、机器学习与数据挖掘习题
+date: 2026-05-10 02:32:03
+description: 机器学习与数据挖掘面试问答题：监督与无监督、PCA/因子分析、过拟合与交叉验证、树模型与集成等口述考点；动手巩固可配合知识库机器学习总览各章 Binder Notebook。
 outline: deep
 ---
-
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 **动手巩固**：系统化讲义与可运行 Notebook 见 [机器学习与数据挖掘基础（知识库总览）](/knowledge/05-ai-ml/machine-learning/overview)，各章「实战案例」下附 **Binder 在线打开** 链接（浏览器内 JupyterLab，无需本地环境）。

@@ -1,8 +1,9 @@
 ---
-title: "聚合与分组统计"
+title: 聚合与分组统计
+date: 2026-04-26 15:38:28
+description: 目标：熟悉 COUNT、SUM、AVG、MAX、MIN、GROUP BY、HAVING、AS。
 outline: deep
 ---
-
 # 聚合与分组统计
 
 ## 1. 核心语法

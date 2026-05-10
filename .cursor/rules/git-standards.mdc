@@ -1,5 +1,5 @@
 ---
-description: Git 提交规范与分支管理要求
+description: 面经知识库 Git 提交规范与分支管理要求
 globs: *
 alwaysApply: true
 ---

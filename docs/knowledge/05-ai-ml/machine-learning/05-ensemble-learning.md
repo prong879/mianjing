@@ -1,3 +1,8 @@
+---
+title: 模块五：进阶与霸榜模型 (Ensemble Learning)
+date: 2026-05-10 02:32:03
+description: Bagging 与随机森林（OOB、特征重要性）；Boosting 与 XGBoost / LightGBM / CatBoost 及选型；铁矿石库存 LightGBM 时序特征实战（Binder）。
+---
 # 模块五：进阶与霸榜模型 (Ensemble Learning)
 
 > **Binder 实战**：[打开配套 Notebook](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/05_ensemble_learning.ipynb) · 首次启动约 1–3 分钟

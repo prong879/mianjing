@@ -1,8 +1,9 @@
 ---
-title: "SQL 与数据库基础"
+title: SQL 与数据库：总览与模块导航
+date: 2026-04-26 16:03:31
+description: 面向数分/商分的 SQL 考点清单与分章入口，并链接至量化侧截面与窗口用法笔记。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 <!-- cross-links -->

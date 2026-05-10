@@ -1,3 +1,8 @@
+---
+title: 模块三：回归问题与模型优化基础 (Regression & Optimization)
+date: 2026-05-10 02:32:03
+description: 线性回归与最小二乘、多项式与假设；梯度下降与优化器脉络；回归评估与过拟合诊断；Ridge/Lasso、交叉验证与网格搜索；加州房价实战（Binder）。
+---
 # 模块三：回归问题与模型优化基础 (Regression & Optimization)
 
 > **Binder 实战**：[打开配套 Notebook](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/03_regression_optimization.ipynb) · 首次启动约 1–3 分钟

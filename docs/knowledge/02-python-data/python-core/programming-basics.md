@@ -1,13 +1,14 @@
 ---
-title: "Python 基础语法与进阶"
+title: Python 基础语法与进阶
+date: 2026-04-26 19:00:05
+description: 本章节涵盖 Python 基础语法、数据结构、文件读写、序列化以及 API 调用等核心知识点与配套练习。
 outline: deep
 tags:
-  - Python
-  - 基础语法
-  - 文件处理
-  - API
+- Python
+- 基础语法
+- 文件处理
+- API
 ---
-
 # Python 基础语法与进阶
 
 本章节涵盖 Python 基础语法、数据结构、文件读写、序列化以及 API 调用等核心知识点与配套练习。

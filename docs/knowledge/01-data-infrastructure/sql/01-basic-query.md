@@ -1,8 +1,9 @@
 ---
-title: "单表查询基础"
+title: 单表查询基础
+date: 2026-04-26 15:38:28
+description: 目标：熟悉 SELECT、WHERE、ORDER BY、LIMIT。
 outline: deep
 ---
-
 # 单表查询基础
 
 ## 1. 核心语法

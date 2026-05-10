@@ -1,3 +1,8 @@
+---
+title: 模块四：分类问题与树模型 (Classification & Tree Models)
+date: 2026-05-10 02:32:03
+description: 逻辑回归与 Sigmoid/Softmax、交叉熵；混淆矩阵与 ROC/AUC 等分类指标；决策树；并补充 KNN、SVM、朴素贝叶斯等经典基线；乳腺癌/鸢尾花实战（Binder）。
+---
 # 模块四：分类问题与树模型 (Classification & Tree Models)
 
 > **Binder 实战**：[打开配套 Notebook](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/04_classification_tree_models.ipynb) · 首次启动约 1–3 分钟

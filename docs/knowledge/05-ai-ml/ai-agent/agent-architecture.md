@@ -1,8 +1,9 @@
 ---
-title: "Agent 架构与核心机制"
+title: Agent 架构核心：规划记忆、ReAct 与 Tool Calling
+date: 2026-04-26 19:44:08
+description: 面试向的 Plan-Act-Observe 闭环、ReAct、Planner/Memory、多 Agent 与状态机；正文后半深入 Tool Calling 与 ReAct 机制。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 ### 六、Agent 架构与核心机制

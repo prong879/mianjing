@@ -1,8 +1,9 @@
 ---
-title: "Agent 架构设计题"
+title: Agent 架构设计题
+date: 2026-04-26 19:00:05
+description: Agent 架构与设计类面试题汇编：基础概念与模块划分、与普通问答的差异、工具与工作流编排、多 Agent、RAG 与工程追问等，各题附参考答法（含自我介绍模板类小题）。
 outline: deep
 ---
-
 # Agent 架构设计题
 
 ## 一、Agent 基础概念与架构认知

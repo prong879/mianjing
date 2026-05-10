@@ -1,8 +1,9 @@
 ---
-title: "产品思维与场景落地"
+title: Agent 产品场景与自动化工作流（HEARTBEAT）
+date: 2026-04-26 19:35:44
+description: 产品向 Agent：场景是否值得做、需求与 ROI、流程拆解与可控/可解释交互、失败体验与 Demo 产品化（权限、日志、评估）；进阶含 OpenClaw HEARTBEAT/BOOT 与定时多 Agent 编排。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 ### 十二、产品思维与场景落地

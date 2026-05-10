@@ -1,3 +1,8 @@
+---
+title: 面试题库总览
+date: 2026-05-09 15:54:28
+description: 面试题库首页：按数据分析/商分数科、AI Agent、量化、产品经理分区聚合习题与面经；长篇岗位备考（数巅、卓创、电商达人、澎博）归入对应栏目；系统学习配合知识库总览，节奏可参考考前冲刺与学习路线。
+---
 # 面试题库总览
 
 题目与面经按**岗位方向**归类，适合考前集中刷；**系统学习**请配合 [知识库](/knowledge/)。**具体公司的长篇岗位备考**（数巅、卓创、电商达人、澎博）已直接归类在各岗位的题库目录中，便于与通用面试题一起查找。
@@ -35,7 +40,7 @@
 ## 量化
 
 - [概率与统计推导题](/interviews/03-quant-finance/math-stats)
-- [期权与衍生品定价题](/interviews/03-quant-finance/derivatives)
+- [量化实习 · 简历面与清单](/interviews/03-quant-finance/derivatives)
 - [量化代码与算法题](/interviews/03-quant-finance/coding-algorithms)
 
 ## 产品经理

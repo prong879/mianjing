@@ -1,8 +1,9 @@
 ---
-title: "数据、数据库与业务系统集成"
+title: Agent 的数据集成与业务系统
+date: 2026-04-26 19:35:44
+description: Agent 接入真实系统：SQL 与 NL→SQL 风险、业务 CRM/ERP/API、文件解析与权限隔离、站内与企业搜索；数据分级权限、敏感信息脱敏与调用审计日志；可与本站 SQL、数仓笔记交叉阅读。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 <!-- cross-links -->

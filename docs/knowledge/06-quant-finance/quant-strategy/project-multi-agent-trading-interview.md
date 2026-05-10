@@ -1,8 +1,9 @@
 ---
-title: "项目复盘：多 Agent 量化交易与投资决策 — 面试知识提炼"
+title: 一、技术栈速览（面试可先说这张表）
+date: 2026-05-08 12:20:37
+description: 多 Agent 量化交易与投资决策项目复盘：基本面/技术面/情绪并行→牛熊辩论与裁决→风控硬闸门→模拟执行；Python LangGraph 主干，附 Java/Go 并发对照实现；结构与 ETF 监控复盘一致（速览→原理→考点→清单）。
 outline: deep
 ---
-
 > 对应仓库：**多 Agent 量化交易与投资决策系统**（六角色协作：三维分析 → 牛熊辩论 → 风控门禁 → 模拟执行；Python 以 **LangGraph** 为主干，另含 **Java / Go** 对照实现）。  
 > 本文结构与 [ETF 监控项目复盘](/knowledge/06-quant-finance/quant-strategy/project-etf-monitoring-interview) 对齐：**速览 → 技术栈原理 → 模块考点 → 追问 → 演示 → 清单**。
 

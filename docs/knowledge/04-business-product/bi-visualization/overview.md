@@ -1,8 +1,9 @@
 ---
-title: "Excel 与 BI 工具"
+title: PowerBI 与 Tableau 核心知识
+date: 2026-04-26 19:00:05
+description: Excel 函数与透视表、基础图表选型；Power BI 与 Tableau 的差异及维度/度量概念；指标看板设计与结论表达（不只「出图」）。偏业务/经营/商分岗常问。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 

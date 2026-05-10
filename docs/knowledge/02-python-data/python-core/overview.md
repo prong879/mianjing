@@ -1,8 +1,9 @@
 ---
-title: "Python 与数据处理"
+title: Python 数据处理：总览与模块导航
+date: 2026-04-26 15:38:28
+description: 面向笔试与项目追问的 Python / pandas 考点清单与分章入口，并链接至量化侧防未来函数与回测清洗笔记。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 <!-- cross-links -->

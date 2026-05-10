@@ -1,8 +1,9 @@
 ---
-title: "条件统计与业务表达"
+title: 条件统计与业务表达
+date: 2026-04-26 15:38:28
+description: 目标：会用 CASE WHEN 表达业务口径。
 outline: deep
 ---
-
 # 条件统计与业务表达
 
 ## 1. 核心语法

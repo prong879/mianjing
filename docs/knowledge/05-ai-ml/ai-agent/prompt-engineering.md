@@ -1,8 +1,9 @@
 ---
-title: "Prompt Engineering 与上下文设计"
+title: Prompt Engineering 与 Context Window
+date: 2026-04-26 19:44:08
+description: 面试提纲：Prompt 结构、Few-shot、CoT、输出格式、注入与版本管理；进阶详解 Context Window、长对话与超大工具返回裁剪，并涉及 OpenClaw Context Engine 等工程抽象。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 ### 三、Prompt Engineering 与上下文设计

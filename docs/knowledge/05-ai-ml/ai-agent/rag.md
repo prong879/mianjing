@@ -1,8 +1,9 @@
 ---
-title: "RAG 与知识库系统"
+title: 五、RAG 与知识库系统
+date: 2026-04-26 19:35:44
+description: RAG 与知识库：文档解析与 Chunk、Embedding 与向量库、关键词/向量/混合检索与 Rerank、引用溯源；解决私有知识与更新滞后，并覆盖召回率、忠实度等评估要点。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 ### 五、RAG 与知识库系统

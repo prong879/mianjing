@@ -1,12 +1,13 @@
 ---
-title: "量化实习岗位说明与工具速览"
+title: 量化实习：岗位要点与框架速览
+date: 2026-04-26 15:38:28
+description: 大宗商品期货 CTA 实习语境：示例 JD 与能力画像；Backtrader（Cerebro、Strategy、回测流程）与 vn.py（CtaTemplate、BarGenerator、on_bar）的分工、常用 API 及伪代码流程；高/中/低频与中低频策略划分及与岗位预期的对应。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 
-# 量化面试资料
+# 量化实习：岗位要点与框架速览
 ## 要求
 
 > 实习岗位：量化分析研究员      招聘人数：1-2人

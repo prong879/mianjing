@@ -1,8 +1,9 @@
 ---
-title: "编程与数据处理"
+title: 量化：编程与数据处理
+date: 2026-04-26 19:00:05
+description: 与通用 SQL、pandas 总览互链；量化侧强调 shift 防未来函数、极值清洗与口径；SQL 窗口处理截面排名；Python/numpy/pandas 基础串讲与时序索引；数据路径、获取与文件管理实务。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 <!-- cross-links -->

@@ -1,8 +1,9 @@
 ---
-title: "大模型基础与 LLM 调用"
+title: 什么是 AI、大模型和 Agent？
+date: 2026-04-26 19:35:44
+description: LLM 与 Agent 接口基础：Token 与上下文、temperature/top_p/stream、幻觉与边界、Embedding 与结构化输出、成本与延迟；后半为 AI/大模型/Agent 概念科普课。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 ### 二、大模型基础与 LLM 调用

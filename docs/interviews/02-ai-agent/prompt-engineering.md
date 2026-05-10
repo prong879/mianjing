@@ -1,8 +1,9 @@
 ---
-title: "提示词工程与大模型调用题"
+title: 二、提示词工程 (Prompt Engineering) & 上下文管理
+date: 2026-04-26 19:00:05
+description: Agent 面试中 Prompt Engineering 与上下文管理真题整理：结构化提示、Few-shot、工具调用协同、输出约束与常见问题排查，附参考答法。
 outline: deep
 ---
-
 > 维护说明：请直接在 `docs/` 目录维护本页内容。本页面已将各大厂的面经按知识体系和考察模块进行重新整理与归类，并添加了解答。
 
 ## 二、提示词工程 (Prompt Engineering) & 上下文管理

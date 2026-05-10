@@ -1,8 +1,9 @@
 ---
-title: "金融与衍生品基础"
+title: 一、 金融与衍生品基础
+date: 2026-04-26 15:38:28
+description: 面向期货与商品 CTA：合约要素、保证金与逐日盯市、多空盈亏及手续费/滑点/换月等摩擦；大宗商品入门、基差与期限结构（Contango/Backwardation/Roll Yield）；并串联量化研究口径（连续合约、复权、成本）与 HR/Mentor 追问方向。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 

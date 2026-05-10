@@ -1,8 +1,9 @@
-﻿---
-title: "推荐学习路线"
+---
+title: OpenClaw / Agent 合集：学习路线、简历与模拟面试
+date: 2026-04-26 19:44:08
+description: OpenClaw/Agent 超长合集：推荐学习顺序与练手项目、简历与 STAR、模拟面试题库、技术栈与企业落地串讲；可按目录分块阅读，不必一次通读。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 

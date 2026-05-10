@@ -1,8 +1,9 @@
 ---
-title: "子查询与窗口函数"
+title: 子查询、CTE、窗口函数
+date: 2026-04-26 15:38:28
+description: 子查询、CTE 与窗口函数：ROW_NUMBER/RANK、分组 Top N、滚动 SUM/AVG 等；解决排名、累计与 PARTITION BY 分组场景下的高频笔试题。
 outline: deep
 ---
-
 # 子查询、CTE、窗口函数
 
 ## 1. 核心语法

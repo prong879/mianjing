@@ -1,8 +1,9 @@
 ---
-title: "Tool Calling 与函数调用"
+title: Tool Calling、Skills 与 ClawHub 生态
+date: 2026-04-26 19:35:44
+description: Tool Calling 面试考点：意图解析、Function Calling 与 Schema、工具粒度、参数校验与安全隔离、结果摘要与多工具链路；后半为 OpenClaw Tools→Skills→Plugins 分层与 ClawHub。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 ### 四、Tool Calling 与函数调用

@@ -1,3 +1,8 @@
+---
+title: 模块六：无监督学习 (Unsupervised Learning)
+date: 2026-05-10 02:32:03
+description: K-Means（K 值选择、轮廓系数、局限与改进）与典型应用；PCA 降维、方差贡献率与维度灾难；电商用户聚类案例（Binder）。
+---
 # 模块六：无监督学习 (Unsupervised Learning)
 
 > **Binder 实战**：[打开配套 Notebook](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/06_unsupervised_learning.ipynb) · 首次启动约 1–3 分钟

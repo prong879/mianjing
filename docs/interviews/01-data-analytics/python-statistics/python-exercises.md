@@ -1,8 +1,9 @@
 ---
-title: "Python 与数据处理习题"
+title: 三、Python 与数据处理习题
+date: 2026-04-26 18:12:01
+description: Python 与数据处理面试习题：工具栈与学习路径、pandas 清洗与分析、编码小题及可视化协作场景等，附参考答法。
 outline: deep
 ---
-
 > 维护说明：请直接在 docs/ 目录维护本页内容。
 
 ### 三、Python 与数据处理习题

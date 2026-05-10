@@ -1,3 +1,8 @@
+---
+title: 模块七：工业化机器学习工程 (AutoML & Production)
+date: 2026-05-10 02:32:03
+description: 自动化 EDA（Profiling）、AutoML（AutoGluon/PyCaret）、Sklearn Pipeline、Optuna 超参搜索、MLflow/W&B 实验追踪；不平衡与标签噪声（SMOTE、Cleanlab）；电信流失端到端 Pipeline 案例（Binder）。
+---
 # 模块七：工业化机器学习工程 (AutoML & Production)
 
 > **Binder 实战**：[打开配套 Notebook](https://mybinder.org/v2/gh/prong879/mianjing/main?urlpath=lab/tree/notebooks/machine-learning/07_automl_production.ipynb) · 首次启动约 1–3 分钟
