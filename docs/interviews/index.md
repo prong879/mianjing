@@ -36,6 +36,7 @@ description: 面试题库首页：按数据分析/商分数科、AI Agent、量�
 - [提示词与大模型调用题](/interviews/02-ai-agent/prompt-engineering)
 - [检索增强生成(RAG)真题](/interviews/02-ai-agent/rag-system)
 - [Agent 架构设计题](/interviews/02-ai-agent/architecture-design)
+- [TenXAI：AI Agent 实习生](/interviews/02-ai-agent/tenxai-ai-agent-intern)
 
 ## 量化
 
@@ -49,6 +50,7 @@ description: 面试题库首页：按数据分析/商分数科、AI Agent、量�
 
 - [B端电商达人产品实习](/interviews/04-product-manager/b2b-ecommerce-creator-intern)
 - [澎博财经：埋点 / 数据平台 / AI Agent](/interviews/04-product-manager/pengbo-fintech-product-intern)
+- [一手万物科技：AI 产品经理实习](/interviews/04-product-manager/yishou-ai-product-manager-intern)
 
 ### 通用产品与策略题
 
