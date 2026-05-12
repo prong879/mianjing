@@ -175,6 +175,7 @@ export default withMermaid(
               { text: '05 集成学习', link: '/knowledge/05-ai-ml/machine-learning/05-ensemble-learning' },
               { text: '06 无监督学习', link: '/knowledge/05-ai-ml/machine-learning/06-unsupervised-learning' },
               { text: '07 AutoML 与生产', link: '/knowledge/05-ai-ml/machine-learning/07-automl-production' },
+              { text: '强化学习', link: '/knowledge/05-ai-ml/reinforcement-learning/overview' },
             ],
           },
           {
@@ -305,6 +306,10 @@ export default withMermaid(
               {
                 text: 'TenXAI：AI Agent 实习生',
                 link: '/interviews/02-ai-agent/tenxai-ai-agent-intern',
+              },
+              {
+                text: '港科大×金融机构：AI系统研发实习生',
+                link: '/interviews/02-ai-agent/hkust-financial-ai-intern',
               },
             ],
           },

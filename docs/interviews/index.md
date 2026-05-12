@@ -37,6 +37,7 @@ description: 面试题库首页：按数据分析/商分数科、AI Agent、量�
 - [检索增强生成(RAG)真题](/interviews/02-ai-agent/rag-system)
 - [Agent 架构设计题](/interviews/02-ai-agent/architecture-design)
 - [TenXAI：AI Agent 实习生](/interviews/02-ai-agent/tenxai-ai-agent-intern)
+- [港科大×金融机构：AI系统研发实习生](/interviews/02-ai-agent/hkust-financial-ai-intern)
 
 ## 量化
 

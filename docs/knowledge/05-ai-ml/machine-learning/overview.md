@@ -11,6 +11,7 @@ outline: deep
 ## 与量化笔记的衔接
 
 - 因子 / 表格数据语境下的树模型与时序：[机器学习（量化）](/knowledge/06-quant-finance/quant-strategy/machine-learning)
+- 强化学习入门与量化应用案例：[强化学习基础](/knowledge/05-ai-ml/reinforcement-learning/overview)
 
 ## 模块化讲义（主线学习路径）
 

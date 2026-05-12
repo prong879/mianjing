@@ -36,6 +36,7 @@ description: 本站知识导航：数据工程（SQL、Python、pandas、BI）�
 ## 机器学习（通用）
 
 - [机器学习基础总览](/knowledge/05-ai-ml/machine-learning/overview) — 七篇模块化讲义（基石 → 数据 → 回归与优化 → 分类与树 → 集成 → 无监督 → AutoML/生产）+ 面试速记；与 [量化侧 ML 笔记](/knowledge/06-quant-finance/quant-strategy/machine-learning) 可对照阅读（表述角度不同）。
+- [强化学习基础](/knowledge/05-ai-ml/reinforcement-learning/overview) — MDP、常用 RL/DRL 算法地图，以及算法交易、组合管理、订单执行、做市、期权对冲等量化投资应用案例。
 
 ## AI Agent
 
