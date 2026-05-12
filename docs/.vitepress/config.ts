@@ -302,6 +302,10 @@ export default withMermaid(
               { text: '提示词与大模型调用题', link: '/interviews/02-ai-agent/prompt-engineering' },
               { text: '检索增强生成(RAG)真题', link: '/interviews/02-ai-agent/rag-system' },
               { text: 'Agent 架构设计题', link: '/interviews/02-ai-agent/architecture-design' },
+              {
+                text: 'TenXAI：AI Agent 实习生',
+                link: '/interviews/02-ai-agent/tenxai-ai-agent-intern',
+              },
             ],
           },
           {
@@ -321,6 +325,10 @@ export default withMermaid(
               {
                 text: '澎博财经：埋点 / 数据平台 / AI Agent',
                 link: '/interviews/04-product-manager/pengbo-fintech-product-intern',
+              },
+              {
+                text: '一手万物：AI 产品经理实习',
+                link: '/interviews/04-product-manager/yishou-ai-product-manager-intern',
               },
               { text: '产品经理面试速记', link: '/interviews/04-product-manager/interview-transcript' },
               { text: '产品嗅觉与需求拆解', link: '/interviews/04-product-manager/product-sense' },
