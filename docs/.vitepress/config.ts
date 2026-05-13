@@ -320,6 +320,10 @@ export default withMermaid(
               { text: '概率与统计推导题', link: '/interviews/03-quant-finance/math-stats' },
               { text: '期权与衍生品定价题', link: '/interviews/03-quant-finance/derivatives' },
               { text: '量化代码与算法题', link: '/interviews/03-quant-finance/coding-algorithms' },
+              {
+                text: '策略研究员：岗位描述与问题清单',
+                link: '/interviews/03-quant-finance/strategy-researcher-intern',
+              },
             ],
           },
           {

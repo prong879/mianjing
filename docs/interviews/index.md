@@ -44,6 +44,7 @@ description: 面试题库首页：按数据分析/商分数科、AI Agent、量�
 - [概率与统计推导题](/interviews/03-quant-finance/math-stats)
 - [量化实习 · 简历面与清单](/interviews/03-quant-finance/derivatives)
 - [量化代码与算法题](/interviews/03-quant-finance/coding-algorithms)
+- [策略研究员 · 岗位描述与问题清单](/interviews/03-quant-finance/strategy-researcher-intern)
 
 ## 产品经理
 
