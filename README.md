@@ -12,7 +12,8 @@ npm run docs:preview
 ### GitHub Pages 部署
 
 1. 仓库 **Settings → Pages**：Source 选 **GitHub Actions**。
-2. 推送至 `main` 或 `master` 分支后，由 `.github/workflows/deploy-docs.yml` 自动构建并发布。
+2. Pull Request 先由 `.github/workflows/check-docs.yml` 验证生产构建；合并到 `main` 后，
+   `.github/workflows/deploy-docs.yml` 才会构建并发布。
 3. 访问链接为 `https://<user>.github.io/<repo>/`。若仓库名变化，请将 `docs/.vitepress/config.ts` 中的 `base` 同步修改。
 
 ### 目录说明
